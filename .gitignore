@@ -95,3 +95,6 @@ ENV/
 
 # Sqlite dbs
 db.*
+
+# MySQL config file
+mysql_database.cnf

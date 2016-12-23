@@ -104,3 +104,4 @@ workspace.xml
 tasks.xml
 dataSources.ids
 dataSources.xml
+dataSources.local.xml

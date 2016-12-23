@@ -98,3 +98,9 @@ db.*
 
 # MySQL config file
 mysql_database.cnf
+
+# PyCharm
+workspace.xml
+tasks.xml
+dataSources.ids
+dataSources.xml

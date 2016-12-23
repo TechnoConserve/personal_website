@@ -13,11 +13,20 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
+from wagtail.wagtailadmin import urls as wagtailadmin_urls
+from wagtail.wagtaildocs import urls as wagtaildocs_urls
+from wagtail.wagtailcore import urls as wagtail_urls
+
+from django.conf import settings
 from django.conf.urls import include, url
+from django.conf.urls.static import static
 from django.contrib import admin
 
 urlpatterns = [
+    url(r'^admin/', include(wagtailadmin_urls)),
+    url(r'^documents/', include(wagtaildocs_urls)),
+    url(r'^polls/', include('polls.urls')),
+    url(r'^django-admin/', admin.site.urls),
 
-	url(r'^polls/', include('polls.urls')),
-    url(r'^admin/', admin.site.urls),
-]
+    url(r'', include(wagtail_urls)),    # At the end so as not to override others
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

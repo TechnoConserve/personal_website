@@ -25,7 +25,6 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', include(wagtailadmin_urls)),
     url(r'^documents/', include(wagtaildocs_urls)),
-    url(r'^polls/', include('polls.urls')),
     url(r'^django-admin/', admin.site.urls),
 
     url(r'', include(wagtail_urls)),    # At the end so as not to override others

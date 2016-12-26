@@ -26,6 +26,7 @@ urlpatterns = [
     url(r'^admin/', include(wagtailadmin_urls)),
     url(r'^documents/', include(wagtaildocs_urls)),
     url(r'^django-admin/', admin.site.urls),
+    url(r'^admin/uwsgi/', include('django_uwsgi.urls')),
 
     url(r'', include(wagtail_urls)),    # At the end so as not to override others
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

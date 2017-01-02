@@ -1,4 +1,8 @@
+import datetime
+
+from django.conf import settings
 from django.db import models
+from django.db.models import Q
 
 from modelcluster.contrib.taggit import ClusterTaggableManager
 from modelcluster.fields import ParentalKey
@@ -42,10 +46,40 @@ class BlogPageTag(TaggedItemBase):
     content_object = ParentalKey('BlogPage', related_name='tagged_items')
 
 
+def limit_author_choices():
+    """Limit choices in blog author field based on config settings."""
+    LIMIT_AUTHOR_CHOICES = getattr(settings, 'BLOG_LIMIT_AUTHOR_CHOICES_GROUP', None)
+    if LIMIT_AUTHOR_CHOICES:
+        if isinstance(LIMIT_AUTHOR_CHOICES, str):
+            limit = Q(groups__name=LIMIT_AUTHOR_CHOICES)
+        else:
+            limit = Q()
+            for s in LIMIT_AUTHOR_CHOICES:
+                limit = limit | Q(group__name=s)
+        if getattr(settings, 'BLOG_LIMIT_AUTHOR_CHOICES_ADMIN', False):
+            limit = limit | Q(is_staff=True)
+    else:
+        limit = {'is_staff': True}
+    return limit
+
+
 class BlogPage(Page):
-    date = models.DateField('Post date')
+    date = models.DateField(
+        'Post date', default=datetime.datetime.today,
+        help_text=("This date is displayed on the blog post. It is not used "
+                   "to schedule posts to go live at a later date.")
+    )
     intro = models.CharField(max_length=250)
     body = RichTextField(blank=True)
+    author = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        blank=True,
+        null=True,
+        limit_choices_to=limit_author_choices,
+        verbose_name='Author',
+        on_delete=models.SET_NULL,
+        related_name='author_pages'
+    )
     tags = ClusterTaggableManager(through=BlogPageTag, blank=True)
 
     def main_image(self):

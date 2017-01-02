@@ -52,7 +52,6 @@ class BlogPage(Page):
             FieldPanel('date'),
             FieldPanel('tags'),
         ], heading='Blog information'),
-        FieldPanel('date'),
         FieldPanel('intro'),
         FieldPanel('body', classname='full'),
         InlinePanel('gallery_images', label='Gallery images'),

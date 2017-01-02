@@ -25,6 +25,19 @@ class BlogIndexPage(Page):
         return context
 
 
+class BlogTagIndexPage(Page):
+
+    def get_context(self, request):
+        #Filter by tag
+        tag = request.GET.get('tag')
+        blogpages = BlogPage.objects.filter().filter(tags__name=tag)
+
+        # Update template context
+        context = super(BlogTagIndexPage, self).get_context(request)
+        context['blogpages'] = blogpages
+        return context
+
+
 class BlogPageTag(TaggedItemBase):
     content_object = ParentalKey('BlogPage', related_name='tagged_items')
 

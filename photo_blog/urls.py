@@ -13,6 +13,8 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
+import os.path
+
 from wagtail.wagtailadmin import urls as wagtailadmin_urls
 from wagtail.wagtaildocs import urls as wagtaildocs_urls
 from wagtail.wagtailcore import urls as wagtail_urls
@@ -29,4 +31,10 @@ urlpatterns = [
     url(r'^admin/uwsgi/', include('django_uwsgi.urls')),
 
     url(r'', include(wagtail_urls)),    # At the end so as not to override others
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+]
+
+if settings.DEBUG:
+    from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+
+    urlpatterns += staticfiles_urlpatterns()
+    urlpatterns += static(settings.MEDIA_URL + 'images/', document_root=os.path.join(settings.MEDIA_ROOT, 'images'))

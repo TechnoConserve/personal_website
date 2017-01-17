@@ -8,17 +8,62 @@ from modelcluster.contrib.taggit import ClusterTaggableManager
 from modelcluster.fields import ParentalKey
 from taggit.models import TaggedItemBase
 
+from wagtail.wagtailcore import blocks
+from wagtail.wagtailcore.fields import RichTextField, StreamField
 from wagtail.wagtailcore.models import Page, Orderable
-from wagtail.wagtailcore.fields import RichTextField
-from wagtail.wagtailadmin.edit_handlers import FieldPanel, InlinePanel, MultiFieldPanel
+from wagtail.wagtailadmin.edit_handlers import FieldPanel, InlinePanel, MultiFieldPanel, StreamFieldPanel
+from wagtail.wagtailimages.blocks import ImageChooserBlock
 from wagtail.wagtailimages.edit_handlers import ImageChooserPanel
 from wagtail.wagtailsearch import index
+
+LANGUAGES = (
+    # Each code block is tagged with the language used so highlight.js marks the code up correctly
+    ('python', 'Python'),
+    ('css', 'CSS'),
+    ('http', 'HTTP'),
+    ('javascript', 'JavaScript'),
+    ('bash', 'Bash'),
+    ('ini', 'Ini'),
+    ('sql', 'SQL'),
+    ('json', 'JSON'),
+    ('markdown', 'Markdown'),
+    ('html', 'HTML'),
+    ('xml', 'XML'),
+    ('java', 'Java'),
+    ('nginx', 'Nginx'),
+)
+
+
+class CodeBlock(blocks.StructBlock):
+    code = blocks.TextBlock(max_length=8000)
+    language = blocks.ChoiceBlock(choices=LANGUAGES, required=False, default='python')
+
+    class Meta:
+        template = 'blocks/code.html'
+        icon = 'spinner'
+        label = 'Code chunk'
+
+
+class Heading(blocks.CharBlock):
+    class Meta:
+        template = 'blocks/heading.html'
+        icon = 'grip'
+        label = 'Heading'
+
 
 class BlogIndexPage(Page):
     intro = RichTextField(blank=True)
 
     content_panels = Page.content_panels + [
         FieldPanel('intro', classname="full")
+    ]
+
+    search_fields = Page.search_fields + [
+        index.SearchField('intro'),
+    ]
+
+    subpage_types = [
+        'blog.BlogPage',
     ]
 
     def get_context(self, request):
@@ -30,7 +75,6 @@ class BlogIndexPage(Page):
 
 
 class BlogTagIndexPage(Page):
-
     def get_context(self, request):
         #Filter by tag
         tag = request.GET.get('tag')
@@ -62,6 +106,12 @@ def limit_author_choices():
         limit = {'is_staff': True}
     return limit
 
+BLOCK_TYPES = [
+    ('heading', Heading(classname='full title')),
+    ('paragraph', blocks.RichTextBlock(requeried=True, classname='paragraph')),
+    ('code_chunk', CodeBlock()),
+]
+
 
 class BlogPage(Page):
     date = models.DateField(
@@ -70,7 +120,7 @@ class BlogPage(Page):
                    "to schedule posts to go live at a later date.")
     )
     intro = models.CharField(max_length=250)
-    body = RichTextField(blank=True)
+    body = StreamField(block_types=BLOCK_TYPES, verbose_name='body')
     author = models.ForeignKey(
         settings.AUTH_USER_MODEL,
         blank=True,
@@ -100,7 +150,7 @@ class BlogPage(Page):
             FieldPanel('tags'),
         ], heading='Blog information'),
         FieldPanel('intro'),
-        FieldPanel('body', classname='full'),
+        StreamFieldPanel('body'),
         InlinePanel('gallery_images', label='Gallery images'),
     ]
 

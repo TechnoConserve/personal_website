@@ -1,21 +1,34 @@
 {% extends "base.html" %}
 
-{% load wagtailcore_tags wagtailimages_tags %}
+{% load static wagtailcore_tags wagtailimages_tags %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static "blog/css/blog.css" %}">
+    <link rel="stylesheet" href="{% static "blog/css/default.css" %}">
+{% endblock extra_css %}
+
+{% block heading %}
+    <div class="blog-header">
+        <div class="container">
+            <h1 class="blog-post-title">{{ page.title }}</h1>
+            <h5 class="blog-post-meta">{{ page.date }}</h5>
+        </div>
+    </div>
+{% endblock heading %}
+
+<hr>
 
 {% block content %}
-    <h1>{{ page.title }}</h1>
-    <p class="meta">{{ page.date }}</p>
+    <div class="blog-post">
+        {% include_block page.body %}
 
-    <div class="intro">{{ page.intro }}</div>
-
-    {{ page.body|richtext }}
-
-    {% for item in page.gallery_images.all %}
-        <div style="float: left; margin: 10px">
-            {% image item.image fill-320x240 %}
-            <p>{{ item.caption }}</p>
-        </div>
-    {% endfor %}
+        {% for item in page.gallery_images.all %}
+            <div style="float: left; margin: 10px">
+                {% image item.image fill-320x240 %}
+                <p>{{ item.caption }}</p>
+            </div>
+        {% endfor %}
+    </div>
 
     {% if page.tags.all.count %}
         <div class="tags">
@@ -30,19 +43,26 @@
 
 {% endblock content %}
 
+
 {% block extra_js %}
-    <div id="disqus_thread"></div>
-    <script>
-    var disqus_config = function () {
-    this.page.url = '{{ page.full_url }}';
-    this.page.identifier = '{{ page.id }}';
-    };
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = '//averyuslaner-com.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <script src="{% static "blog/js/highlight.pack.js" %}"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <!-- Comments -->
+    <footer class="blog-footer">
+        <div id="disqus_thread"></div>
+        <script>
+        var disqus_config = function () {
+        this.page.url = '{{ page.full_url }}';
+        this.page.identifier = '{{ page.id }}';
+        };
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = '//averyuslaner-com.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </footer>
 {% endblock extra_js %}

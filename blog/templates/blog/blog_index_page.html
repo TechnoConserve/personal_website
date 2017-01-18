@@ -16,7 +16,7 @@
         {% with post=post.specific %}
             <div class="blog-post">
                 <h2 class="blog-post-title"><a href="{% pageurl post %}">{{ post.title }}</a></h2>
-                <p class="blog-post-meta">{{ post.date }} by {{ post.author }}</p>
+                <p class="blog-post-meta">{{ post.date }} by {{ post.owner }}</p>
 
                 {% with post.main_image as main_image %}
                     {% if main_image %}{% image main_image fill-160x100 %}{% endif %}

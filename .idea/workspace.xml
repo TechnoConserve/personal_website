@@ -670,7 +670,14 @@
       <option name="project" value="LOCAL" />
       <updated>1505247757606</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Updated Pillow to latest version.">
+      <created>1505247824703</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1505247824703</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -755,7 +762,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="true" />
-    <MESSAGE value="Light modifications to base HTML format files to correctly display content created in wagtail admin." />
     <MESSAGE value="Further modification of base html files. Loosely following wagtail demo html files." />
     <MESSAGE value="Began blog app." />
     <MESSAGE value="Made blog index page model, created migrations for the new model and added basic styling page." />
@@ -780,7 +786,8 @@
     <MESSAGE value="Custom user model added that simply extends default wagtail user model. Dropped and rebuilt database." />
     <MESSAGE value="Rebuilt development environment and refactored project structure." />
     <MESSAGE value="Updated Django to latest version." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated Django to latest version." />
+    <MESSAGE value="Updated Pillow to latest version." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated Pillow to latest version." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />

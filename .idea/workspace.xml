@@ -684,7 +684,14 @@
       <option name="project" value="LOCAL" />
       <updated>1505247896000</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Updated Willow to latest version.">
+      <created>1505247937993</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1505247937993</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -769,7 +776,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="true" />
-    <MESSAGE value="Began blog app." />
     <MESSAGE value="Made blog index page model, created migrations for the new model and added basic styling page." />
     <MESSAGE value="Added model for blog posts and made migrations." />
     <MESSAGE value="Added template for blog post." />
@@ -794,7 +800,8 @@
     <MESSAGE value="Updated Django to latest version." />
     <MESSAGE value="Updated Pillow to latest version." />
     <MESSAGE value="Updated Unidecode to latest version." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated Unidecode to latest version." />
+    <MESSAGE value="Updated Willow to latest version." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated Willow to latest version." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />

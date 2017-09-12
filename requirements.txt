@@ -1,5 +1,5 @@
 argon2-cffi==16.3.0
-beautifulsoup4==4.5.1
+beautifulsoup4==4.6.0
 cffi==1.10.0
 Django==1.11.5
 django-modelcluster==2.0

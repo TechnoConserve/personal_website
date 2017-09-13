@@ -104,3 +104,4 @@ dataSources.ids
 dataSources.xml
 dataSources.local.xml
 /static/
+!/photo_blog/static/

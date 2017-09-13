@@ -91,9 +91,8 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/wagtailsnippets/js/snippet-chooser.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/wagtailusers/css/groups_edit.css" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/wagtailusers/js/group-form.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/home/templates/home/home_page.html" afterPath="$PROJECT_DIR$/home/templates/home/home_page.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/css/base.css" afterPath="$PROJECT_DIR$/static/admin/css/base.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/css/changelists.css" afterPath="$PROJECT_DIR$/static/admin/css/changelists.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/css/dashboard.css" afterPath="$PROJECT_DIR$/static/admin/css/dashboard.css" />
@@ -865,7 +864,14 @@
       <option name="project" value="LOCAL" />
       <updated>1505326589995</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Added welcome message to home page.">
+      <created>1505330826961</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1505330826961</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -963,7 +969,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="true" />
-    <MESSAGE value="Cleaned up blog index template." />
     <MESSAGE value="Restricted blog posts to published posts and sorted by most recent." />
     <MESSAGE value="Created blog image gallery model and made its migrations." />
     <MESSAGE value="Edited blog post template to display images." />
@@ -988,7 +993,8 @@
     <MESSAGE value="Updated beautifulsoup to latest version." />
     <MESSAGE value="Updated django-modelcluster to latest version." />
     <MESSAGE value="Adding nav bar to base template. Refactored handling of static assets." />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding nav bar to base template. Refactored handling of static assets." />
+    <MESSAGE value="Added welcome message to home page." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added welcome message to home page." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />

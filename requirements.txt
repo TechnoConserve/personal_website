@@ -6,6 +6,7 @@ chardet==3.0.4
 Django==1.11.5
 django-modelcluster==3.1
 django-polls==0.2.1
+django-registration==2.2
 django-taggit==0.22.1
 django-treebeard==4.1.2
 django-uwsgi==0.2.1

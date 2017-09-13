@@ -103,11 +103,4 @@ tasks.xml
 dataSources.ids
 dataSources.xml
 dataSources.local.xml
-/static/admin/css/widgets.css
-/static/admin/css/login.css
-/static/admin/css/base.css
-/static/admin/css/fonts.css
-/static/admin/css/rtl.css
-/static/admin/css/changelists.css
-/static/admin/css/dashboard.css
-/static/admin/css/forms.css
+/static/

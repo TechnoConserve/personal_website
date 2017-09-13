@@ -162,15 +162,20 @@ STATICFILES_FINDERS = [
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 ]
 
+STATICFILES_DIRS = [
+    os.path.join(PROJECT_DIR, 'static'),
+]
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
 
 # Other Wagtail settings
-WAGTAIL_SITE_NAME = "Avery Uslaner"
+WAGTAIL_SITE_NAME = "Photo Blog"
 
-STATIC_ROOT = os.path.join(BASE_DIR, '../../static')
-MEDIA_ROOT = os.path.join(BASE_DIR, '../../media')
 
 # Email
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'

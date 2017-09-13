@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load home_extras %}
 
 {% block title %}Sign Up{% endblock %}
 
@@ -41,7 +42,7 @@
                 </div>
                 <div class="form-group">
                     {{ field.label_tag }}
-                    {{ field }}
+                    {{ field|add_css:"form-control" }}
                 </div>
             {% endfor %}
             <button class="btn btn-primary form-group">Register</button>

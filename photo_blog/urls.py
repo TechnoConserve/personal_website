@@ -29,6 +29,7 @@ urlpatterns = [
     url(r'^documents/', include(wagtaildocs_urls)),
     url(r'^django-admin/', admin.site.urls),
     url(r'^admin/uwsgi/', include('django_uwsgi.urls')),
+    url(r'^accounts/', include('registration.backends.hmac.urls')),
 
     url(r'', include(wagtail_urls)),    # At the end so as not to override others
 ]

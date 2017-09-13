@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block title %}Sign Up{% endblock %}
+
+{% block heading_text %}Sign Up{% endblock %}
+
+{% block content %}
+    <div class="text-center">
+        <h3>Create An Account</h3>
+    </div>
+
+    <div class="rich-text">
+        <p>
+            Fill out the form below (all fields are required), and your
+            account will be created; you'll be sent an email with instructions on how
+            to finish your registration.
+        </p>
+        <p>
+            We'll only use your email to send you signup instructions. We hate spam
+            as much as you do.
+        </p>
+        <p>
+            This account will let you log into the ticket tracker, claim tickets,
+            and be exempt from spam filtering.
+        </p>
+        <p>
+            Your username can only consist of alphanumeric characters and
+            underscores and may be up to 30 characters long.
+        </p>
+
+        <form method="POST" action="." class="form-horizontal">
+            {% csrf_token %}
+            {% for error in form.non_field_errors %}
+                <div class="form-group has-error text-danger">
+                    {{ error }}
+                </div>
+            {% endfor %}
+            {% for field in form %}
+                <div class="form-group has-error text-danger">
+                    {{ field.errors }}
+                </div>
+                <div class="form-group">
+                    {{ field.label_tag }}
+                    {{ field }}
+                </div>
+            {% endfor %}
+            <button class="btn btn-primary form-group">Register</button>
+        </form>
+    </div>
+{% endblock %}

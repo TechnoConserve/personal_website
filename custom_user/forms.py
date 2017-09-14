@@ -12,11 +12,6 @@ class CustomUserForm(RegistrationForm):
 
 
 class ProfileForm(forms.ModelForm):
-    """
-    A form for editing user profiles. Assumes that the
-    Profile instance passed in has an associated User
-    object. The view (see views.py) takes care of that.
-    """
     first_name = forms.CharField(
         required=True,
         widget=forms.TextInput(attrs={'placeholder': 'First Name'})
@@ -44,10 +39,11 @@ class ProfileForm(forms.ModelForm):
         super().__init__(*args, **kwargs)
 
     def save(self, commit=True):
+        # Instance is a CustomUser object
         instance = super().save(commit=commit)
-        instance.user.first_name = self.cleaned_data['first_name']
-        instance.user.last_name = self.cleaned_data['last_name']
-        instance.user.email = self.cleaned_data['email']
+        instance.first_name = self.cleaned_data['first_name']
+        instance.last_name = self.cleaned_data['last_name']
+        instance.email = self.cleaned_data['email']
         if commit:
-            instance.user.save()
+            instance.save()
         return instance

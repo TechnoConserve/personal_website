@@ -40,6 +40,7 @@ urlpatterns = [
         ),
     url(r'^accounts/', include('registration.backends.hmac.urls')),
 
+    url(r'', include('django.contrib.auth.urls')),
     url(r'', include(wagtail_urls)),    # At the end so as not to override others
 ]
 

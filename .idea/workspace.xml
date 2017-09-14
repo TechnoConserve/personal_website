@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5daa2f32-aa60-4cce-90a6-f0a4d8f21f6f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photo_blog/urls.py" afterPath="$PROJECT_DIR$/photo_blog/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photo_blog/templates/registration/activation_complete.html" afterPath="$PROJECT_DIR$/photo_blog/templates/registration/activation_complete.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/shelf/" />
     <ignored mask="*.pem" />
@@ -47,72 +47,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="base.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/photo_blog/settings/base.py">
+      <file leaf-file-name="activation_complete.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/photo_blog/templates/registration/activation_complete.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="190" column="21" lean-forward="false" selection-start-line="190" selection-start-column="21" selection-end-line="190" selection-end-column="21" />
+            <state relative-caret-position="238">
+              <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="registration_complete.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/photo_blog/templates/registration/registration_complete.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="14" lean-forward="false" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="registration_form.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/photo_blog/templates/registration/registration_form.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="45" lean-forward="false" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activation_email.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/photo_blog/templates/registration/activation_email.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/photo_blog/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="44" column="1" lean-forward="true" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
-              <folding>
-                <element signature="e#644#658#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/custom_user/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="58" column="28" lean-forward="false" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="28" />
-              <folding>
-                <marker date="1505412444470" expanded="true" signature="141:424" ph="..." />
-                <marker date="1505412444470" expanded="true" signature="218:424" ph="..." />
-                <marker date="1505412444470" expanded="true" signature="1658:1672" ph="..." />
-                <marker date="1505412444470" expanded="true" signature="1658:1881" ph="..." />
-                <marker date="1505412444470" expanded="true" signature="1701:1730" ph="..." />
-                <marker date="1505412444470" expanded="true" signature="1760:1819" ph="..." />
-                <marker date="1505412444470" expanded="true" signature="1850:1881" ph="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -183,7 +123,6 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/home/templates/home/home_page.html" />
         <option value="$PROJECT_DIR$/photo_blog/templates/registration/activate.html" />
-        <option value="$PROJECT_DIR$/photo_blog/templates/registration/activation_complete.html" />
         <option value="$PROJECT_DIR$/photo_blog/templates/registration/activation_email.txt" />
         <option value="$PROJECT_DIR$/photo_blog/templates/registration/activation_email_subject.txt" />
         <option value="$PROJECT_DIR$/photo_blog/templates/registration/logged_out.html" />
@@ -196,6 +135,7 @@
         <option value="$PROJECT_DIR$/custom_user/forms.py" />
         <option value="$PROJECT_DIR$/photo_blog/templates/registration/registration_complete.html" />
         <option value="$PROJECT_DIR$/photo_blog/urls.py" />
+        <option value="$PROJECT_DIR$/photo_blog/templates/registration/activation_complete.html" />
       </list>
     </option>
   </component>
@@ -911,7 +851,14 @@
       <option name="project" value="LOCAL" />
       <updated>1505412572061</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Added default django authentication urls.">
+      <created>1505412964201</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1505412964201</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -922,7 +869,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28827038" sideWeight="0.5064586" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.59190375" sideWeight="0.4969605" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932165" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32932165" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932165" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14989059" sideWeight="0.49354145" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19530416" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="manage.py@photo_blog" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932165" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -997,7 +944,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="true" />
-    <MESSAGE value="Removed duplicate date field in blog post model." />
     <MESSAGE value="Added tags to blog page template." />
     <MESSAGE value="Added model for index of blog post tags." />
     <MESSAGE value="Created template page for tag index." />
@@ -1022,7 +968,8 @@
     <MESSAGE value="Added templates for account registration process." />
     <MESSAGE value="Refactored template locations for wagtail blocks. Added VPS IP address to allowed hosts for debugging." />
     <MESSAGE value="Made edits to email settings and django-registration form to comply with&#10; custom user registration workflow." />
-    <option name="LAST_COMMIT_MESSAGE" value="Made edits to email settings and django-registration form to comply with&#10; custom user registration workflow." />
+    <MESSAGE value="Added default django authentication urls." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added default django authentication urls." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1195,13 +1142,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/photo_blog/templates/registration/activation_complete.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="16" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/photo_blog/templates/registration/activation_email_subject.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1253,7 +1193,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/custom_user/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
+        <state relative-caret-position="641">
           <caret line="58" column="28" lean-forward="false" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="28" />
           <folding>
             <marker date="1505412444470" expanded="true" signature="141:424" ph="..." />
@@ -1315,6 +1255,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/photo_blog/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="641">
+          <caret line="44" column="1" lean-forward="true" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
+          <folding>
+            <element signature="e#644#658#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/photo_blog/templates/registration/registration_complete.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -1323,13 +1273,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/photo_blog/urls.py">
+    <entry file="file://$PROJECT_DIR$/photo_blog/templates/registration/activation_complete.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="44" column="1" lean-forward="true" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
-          <folding>
-            <element signature="e#644#658#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="238">
+          <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>

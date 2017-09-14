@@ -1,45 +1,37 @@
 {% extends "base.html" %}
+{% load home_extras %}
 
 {% block title %}Log in{% endblock %}
 
+{% block heading_text %}Log In{% endblock %}
+
 {% block content %}
-    <div class="main">
-        <div class="container">
-            <div class="text-center">
-                <h3>Log In</h3>
-            </div>
+    <div>
+        If you don't have an account, you can
+        <a href="{% url 'registration_register' %}">sign up</a> for one.
+        <p></p>
 
-            <div>
-                If you don't have an account, you can
-                <a href="{% url 'registration_register' %}">sign up</a> for one.
-                <p></p>
+        If you forgot your password, you can
+        <a href="{% url 'auth_password_reset' %}">reset it</a>.
+        <p></p>
 
-                If you forgot your password, you can
-                <a href="{% url 'auth_password_reset' %}">reset it</a>.
-                <p></p>
-
-                <form method="POST" action="" class="form-input">
-                    {% csrf_token %}
-                    {% for error in form.non_field_errors %}
-                        <div class="form-group has-error text-danger">
-                            {{ error }}
-                        </div>
-                    {% endfor %}
-                    {% for field in form %}
-                        <div class="form-group has-error text-danger">
-                            {{ field.errors }}
-                        </div>
-                        <div class="form-group">
-                            {{ field.label_tag }}
-                            {{ field }}
-                        </div>
-                    {% endfor %}
-                    <button class="btn btn-primary form-group">Log in</button>
-                </form>
-            </div>
-        </div>
-        <div class="space"></div>
-        <!-- end container -->
+        <form method="POST" action="" class="form-input">
+            {% csrf_token %}
+            {% for error in form.non_field_errors %}
+                <div class="form-group has-error text-danger">
+                    {{ error }}
+                </div>
+            {% endfor %}
+            {% for field in form %}
+                <div class="form-group has-error text-danger">
+                    {{ field.errors }}
+                </div>
+                <div class="form-group">
+                    {{ field.label_tag }}
+                    {{ field|add_css:"form-control" }}
+                </div>
+            {% endfor %}
+            <button class="btn btn-primary form-group">Log in</button>
+        </form>
     </div>
-    <!-- end main -->
 {% endblock %}

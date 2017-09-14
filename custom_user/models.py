@@ -10,9 +10,6 @@ class CustomUserManager(BaseUserManager):
         if not first_name:
             raise ValueError('Users must supply their first name.')
 
-        if not last_name:
-            raise ValueError('Users must supply their last name.')
-
         if not kwargs.get('username'):
             raise ValueError('Users must have a valid username.')
 
@@ -30,6 +27,7 @@ class CustomUserManager(BaseUserManager):
         user = self.create_user(email, first_name, last_name, password, **kwargs)
 
         user.is_superuser = True
+        user.is_staff = True
         user.save()
 
         return user
@@ -42,6 +40,8 @@ class CustomUser(AbstractUser):
     first_name = models.CharField(max_length=40)
     last_name = models.CharField(max_length=40)
 
+    is_active = models.BooleanField(default=False)
+    is_staff = models.BooleanField(default=False)
     is_superuser = models.BooleanField(default=False)
 
     created_at = models.DateTimeField(auto_now_add=True)
@@ -53,7 +53,6 @@ class CustomUser(AbstractUser):
     REQUIRED_FIELDS = [
         'email',
         'first_name',
-        'last_name',
     ]
 
     def __unicode__(self):

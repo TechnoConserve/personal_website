@@ -15,6 +15,7 @@ Including another URLconf
 """
 import os.path
 
+from registration.backends.hmac.views import RegistrationView
 from wagtail.wagtailadmin import urls as wagtailadmin_urls
 from wagtail.wagtaildocs import urls as wagtaildocs_urls
 from wagtail.wagtailcore import urls as wagtail_urls
@@ -24,11 +25,19 @@ from django.conf.urls import include, url
 from django.conf.urls.static import static
 from django.contrib import admin
 
+from custom_user.forms import CustomUserForm
+
 urlpatterns = [
     url(r'^admin/', include(wagtailadmin_urls)),
     url(r'^documents/', include(wagtaildocs_urls)),
     url(r'^django-admin/', admin.site.urls),
     url(r'^admin/uwsgi/', include('django_uwsgi.urls')),
+    url(r'^accounts/register/$',
+            RegistrationView.as_view(
+                form_class=CustomUserForm
+            ),
+            name='registration_register',
+        ),
     url(r'^accounts/', include('registration.backends.hmac.urls')),
 
     url(r'', include(wagtail_urls)),    # At the end so as not to override others

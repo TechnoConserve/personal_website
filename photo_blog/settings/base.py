@@ -184,7 +184,7 @@ WAGTAIL_SITE_NAME = "Photo Blog"
 # Email
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'averyuslaner.com'
-EMAIL_PORT = 993
+EMAIL_PORT = 587
 EMAIL_HOST_USER = 'admin@averyuslaner.com'
 EMAIL_HOST_PASSWORD = os.environ.get('AVE_EMAIL_HOST_PASS', '')
 EMAIL_USE_TLS = True

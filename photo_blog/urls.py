@@ -26,19 +26,27 @@ from django.conf.urls.static import static
 from django.contrib import admin
 
 from custom_user.forms import CustomUserForm
+import custom_user.views as account_views
 
 urlpatterns = [
     url(r'^admin/', include(wagtailadmin_urls)),
     url(r'^documents/', include(wagtaildocs_urls)),
     url(r'^django-admin/', admin.site.urls),
     url(r'^admin/uwsgi/', include('django_uwsgi.urls')),
+    url(r'^accounts/edit/$',
+        account_views.edit_profile,
+        name='edit_profile',
+        ),
     url(r'^accounts/register/$',
-            RegistrationView.as_view(
-                form_class=CustomUserForm
-            ),
-            name='registration_register',
+        RegistrationView.as_view(
+            form_class=CustomUserForm
+        ),
+        name='registration_register',
         ),
     url(r'^accounts/', include('registration.backends.hmac.urls')),
+
+    # User stats
+    url(r'^~(?P<username>[\w.@+-]+)/$', account_views.user_profile, name='user_profile'),
 
     url(r'', include('django.contrib.auth.urls')),
     url(r'', include(wagtail_urls)),    # At the end so as not to override others

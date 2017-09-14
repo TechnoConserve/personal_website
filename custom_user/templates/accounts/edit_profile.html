@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load home_extras %}
+
+{% block title %}Edit your profile{% endblock %}
+
+{% block heading_text %}Edit Your Profile{% endblock %}
+
+{% block content %}
+    <div>
+        <p>
+            Use the form below to edit your profile.
+        </p>
+        <p>
+            Use whatever name you'd like to be identified with while on this website. If
+            you leave it blank, we'll identify you as <b>{{ user.username }}</b>, your username.
+        </p>
+
+        <form method="POST" action="." class="form-horizontal">
+            {% csrf_token %}
+            {% for error in form.non_field_errors %}
+                <div class="form-group has-error text-danger">
+                    {{ error }}
+                </div>
+            {% endfor %}
+            {% for field in form %}
+                <div class="form-group has-error text-danger">
+                    {{ field.errors }}
+                </div>
+                <div class="form-group">
+                    {{ field.label_tag }}
+                    {{ field|add_css:"form-control" }}
+                </div>
+            {% endfor %}
+            <button class="btn btn-primary form-group">Save</button>
+        </form>
+    </div>
+{% endblock %}

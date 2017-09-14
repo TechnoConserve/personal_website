@@ -211,3 +211,6 @@ WAGTAIL_USER_CUSTOM_FIELDS = []  # Nothing yet
 
 # Django-registration
 ACCOUNT_ACTIVATION_DAYS = 7
+
+# Django auth settings
+LOGIN_REDIRECT_URL = 'edit_profile'

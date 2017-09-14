@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load humanize %}
+
+{% block title %}{% firstof user_obj.profile.name user_obj.username %}{% endblock %}
+
+{% block heading_text %}User Profile{% endblock %}
+
+{% block content %}
+    <div>
+        <h3>
+            {% firstof user_obj.profile.name user_obj.username %}
+        </h3>
+
+        <p>
+            Hey internet person.
+        </p>
+
+        <p>
+            You can edit your profile <a href="{% url 'edit_profile' %}">here</a>. If you want. No pressure.
+        </p>
+{% endblock content %}

@@ -17,6 +17,7 @@ from wagtail.wagtailsearch import index
 LANGUAGES = (
     # Each code block is tagged with the language used so highlight.js marks the code up correctly
     ('python', 'Python'),
+    ('django', 'Django'),
     ('css', 'CSS'),
     ('http', 'HTTP'),
     ('javascript', 'JavaScript'),

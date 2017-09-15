@@ -55,6 +55,8 @@ class BlogIndexPage(BlogRoutes, Page):
     intro = RichTextField(blank=True)
     about = RichTextField(blank=True, help_text='What is the blog about?')
 
+    filtered_posts = None
+
     content_panels = Page.content_panels + [
         FieldPanel('intro', classname="full"),
         FieldPanel('about', classname="full"),
@@ -74,10 +76,9 @@ class BlogIndexPage(BlogRoutes, Page):
     def get_context(self, request, **kwargs):
         # Update context to include only published posts, ordered by reverse-chron
         context = super(BlogIndexPage, self).get_context(request)
-        index_page = self
         blogpages = self.get_children().live().order_by('-first_published_at')
         context['blogpages'] = blogpages
-        context['index_page'] = index_page
+        context['index_page'] = self
         return context
 
 

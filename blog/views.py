@@ -15,7 +15,7 @@ class BlogPageServe(View):
     def get(self, request, *args, **kwargs):
         if not request.site:
             raise Http404
-        if request.resolver_match.url_name == 'entry_page_serve_slug':
+        if request.resolver_match.url_name == 'blog_page_serve_slug':
             # Splitting the request path and obtaining the path_components
             # this way allows you to place the blog at the level you want on
             # your sitemap.

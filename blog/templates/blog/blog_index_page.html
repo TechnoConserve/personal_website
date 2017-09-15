@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% load static wagtailcore_tags wagtailimages_tags blog_tags %}
+{% load static wagtailcore_tags blog_tags %}
 
 {% block extra_css %}
     <link rel="stylesheet" href="{% static "blog/css/blog.css" %}">
@@ -13,20 +13,7 @@
 {% block content %}
     <div class="row">
         <div class="col-sm-8 blog-main">
-            {% for post in blogpages %}
-                {% with post=post.specific %}
-                    <div class="blog-post">
-                        <h2 class="blog-post-title"><a href="{% pageurl post %}">{{ post.title }}</a></h2>
-                        <p class="blog-post-meta">{{ post.date }} by {{ post.owner }}</p>
-
-                        {% with post.main_image as main_image %}
-                            {% if main_image %}{% image main_image fill-160x100 %}{% endif %}
-                        {% endwith %}
-
-                        <p>{{ post.intro }}</p>
-                    </div>
-                {% endwith %}
-            {% endfor %}
+            {% post_list %}
         </div>
 
         <div class="col-sm-3 col-sm-offset-1 blog-sidebar">

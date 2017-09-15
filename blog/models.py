@@ -1,6 +1,5 @@
 import datetime
 
-from django.conf import settings
 from django.db import models
 
 from modelcluster.contrib.taggit import ClusterTaggableManager
@@ -13,6 +12,8 @@ from wagtail.wagtailcore.models import Page, Orderable
 from wagtail.wagtailadmin.edit_handlers import FieldPanel, InlinePanel, MultiFieldPanel, StreamFieldPanel
 from wagtail.wagtailimages.edit_handlers import ImageChooserPanel
 from wagtail.wagtailsearch import index
+
+from .routes import BlogRoutes
 
 LANGUAGES = (
     # Each code block is tagged with the language used so highlight.js marks the code up correctly
@@ -50,7 +51,7 @@ class Heading(blocks.CharBlock):
         label = 'Heading'
 
 
-class BlogIndexPage(Page):
+class BlogIndexPage(BlogRoutes, Page):
     intro = RichTextField(blank=True)
     about = RichTextField(blank=True, help_text='What is the blog about?')
 
@@ -67,11 +68,16 @@ class BlogIndexPage(Page):
         'blog.BlogPage',
     ]
 
-    def get_context(self, request):
+    def get_posts(self):
+        return BlogPage.objects.descendant_of(self).live().order_by('-date')
+
+    def get_context(self, request, **kwargs):
         # Update context to include only published posts, ordered by reverse-chron
         context = super(BlogIndexPage, self).get_context(request)
+        index_page = self
         blogpages = self.get_children().live().order_by('-first_published_at')
         context['blogpages'] = blogpages
+        context['index_page'] = index_page
         return context
 
 
@@ -99,7 +105,7 @@ BLOCK_TYPES = [
 
 
 class BlogPage(Page):
-    date = models.DateField(
+    date = models.DateTimeField(
         'Post date', default=datetime.datetime.today,
         help_text=("This date is displayed on the blog post. It is not used "
                    "to schedule posts to go live at a later date.")

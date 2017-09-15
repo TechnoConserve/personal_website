@@ -52,13 +52,15 @@ class Heading(blocks.CharBlock):
 
 class BlogIndexPage(Page):
     intro = RichTextField(blank=True)
+    about = RichTextField(blank=True, help_text='What is the blog about?')
 
     content_panels = Page.content_panels + [
-        FieldPanel('intro', classname="full")
+        FieldPanel('intro', classname="full"),
+        FieldPanel('about', classname="full"),
     ]
 
     search_fields = Page.search_fields + [
-        index.SearchField('intro'),
+        index.SearchField('intro', 'about'),
     ]
 
     subpage_types = [
@@ -87,6 +89,7 @@ class BlogTagIndexPage(Page):
 
 class BlogPageTag(TaggedItemBase):
     content_object = ParentalKey('BlogPage', related_name='tagged_items')
+
 
 BLOCK_TYPES = [
     ('heading', Heading(classname='full title')),

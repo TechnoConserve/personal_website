@@ -26,7 +26,7 @@
             </ul>
             {% if posts|length > 3 %}
                 <p>
-                    If that wasn't enough to wet your whistle, you can see all of {{ user_obj }}'s posts
+                    If that wasn't enough to wet your whistle, you can see all of <b>{{ user_obj }}</b>'s posts
                     <a href="{% routablepageurl blog_index 'blogpages_by_author' user_obj.username %}">here</a>.
                 </p>
             {% endif %}

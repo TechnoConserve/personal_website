@@ -86,7 +86,6 @@ h6, .h6 {
  */
 
 .blog-header {
-  padding-bottom: 1.25rem;
   margin-bottom: 2rem;
   border-bottom: .05rem solid #eee;
 }
@@ -149,7 +148,6 @@ h6, .h6 {
   font-size: 2.5rem;
 }
 .blog-post-meta {
-  margin-bottom: 1.25rem;
   color: #999;
 }
 
@@ -159,7 +157,7 @@ h6, .h6 {
  */
 
 .blog-footer {
-  margin: 5rem 5rem 5rem 5rem;
+  margin: 2rem 0;
   padding: 1em;
   color: #999;
   text-align: center;

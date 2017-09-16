@@ -20,7 +20,7 @@ def edit_profile(request):
 
 def user_profile(request, username):
     user = get_object_or_404(CustomUser, username=username)
-    posts = BlogPage.objects.filter(owner=user)
+    posts = BlogPage.objects.filter(owner=user).order_by('-first_published_at')
     blog_index = posts[0].get_parent().specific
 
     return render(request, "accounts/user_profile.html", {

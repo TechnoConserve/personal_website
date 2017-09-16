@@ -4,6 +4,7 @@ from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, get_object_or_404, redirect
 
 from .models import CustomUser
+from blog.models import BlogPage
 from .forms import ProfileForm
 
 
@@ -19,8 +20,10 @@ def edit_profile(request):
 
 def user_profile(request, username):
     user = get_object_or_404(CustomUser, username=username)
+    posts = BlogPage.objects.filter(owner=user)
 
     return render(request, "accounts/user_profile.html", {
         'user_obj': user,
         'email_hash': hashlib.md5(user.email.encode('ascii', 'ignore')).hexdigest(),
+        'posts': posts,
     })

@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% load humanize %}
+{% load humanize wagtailcore_tags %}
 
 {% block title %}{% firstof user_obj.profile.name user_obj.username %}{% endblock %}
 
@@ -7,16 +7,33 @@
 
 {% block content %}
     <div>
-        <h3>
-            {% firstof user_obj.profile.name user_obj.username %}
-        </h3>
+        <div class="container row inline">
+            <h3>
+                {% firstof user_obj.profile.name user_obj.username %}
+                <span class="small">({{ user_obj.get_full_name }})</span>
+            </h3>
+        </div>
 
-        <p>
-            Hey internet person.
-        </p>
+        {% if posts %}
+            <p>
+                This user is an author on the blog! <b>{{ user_obj.get_full_name }}</b> has contributed
+                {{ posts|length }} post{{ posts|pluralize }}. The three most recent posts are listed below:
+            </p>
+            <ul>
+                {% for post in posts|slice:"4" %}
+                    <li><a href="{% pageurl post %}">{{ post.title }}</a></li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>
+                <b>{{ user_obj.get_full_name }}</b> hasn't done much here yet. We would know if they had.
+            </p>
+        {% endif %}
 
-        <p>
-            You can edit your profile <a href="{% url 'edit_profile' %}">here</a>. If you want. No pressure.
-        </p>
+        {% if user == user_obj %}
+            <p>
+                You can edit your profile <a href="{% url 'edit_profile' %}">here</a>. If you want. No pressure.
+            </p>
+        {% endif %}
     </div>
 {% endblock content %}

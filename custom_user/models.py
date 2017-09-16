@@ -56,7 +56,11 @@ class CustomUser(AbstractUser):
     ]
 
     def __unicode__(self):
-        return self.username
+        try:
+            name = self.get_full_name()
+        except TypeError:
+            name = self.username
+        return name
 
     def get_full_name(self):
         return ' '.join([self.first_name, self.last_name])

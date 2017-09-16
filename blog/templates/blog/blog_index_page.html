@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="{% static "blog/css/default.css" %}">
 {% endblock extra_css %}
 
+{% block heading_text %}
+    <a class="link-unstyled" href="{% pageurl page %}">{{ page.title }}</a>
+{% endblock %}
 {% block meta_heading %}
     <div class="lead blog-description">{{ page.intro|richtext }}</div>
 {% endblock meta_heading %}

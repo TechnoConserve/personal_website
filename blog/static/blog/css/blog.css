@@ -105,6 +105,12 @@ h6, .h6 {
   }
 }
 
+/*
+ * Tags
+ */
+.tags {
+  margin: 0 2px;
+}
 
 /*
  * Main column and sidebar layout

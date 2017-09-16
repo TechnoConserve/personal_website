@@ -12,7 +12,7 @@ class BlogRoutes(RoutablePageMixin):
     @route(r'^(\d{4})/$')
     @route(r'^(\d{4})/(\d{2})/$')
     @route(r'^(\d{4})/(\d{2})/(\d{2})/$')
-    def entries_by_date(self, request, year, month=None, day=None, *args, **kwargs):
+    def blogpages_by_date(self, request, year, month=None, day=None, *args, **kwargs):
         self.filtered_posts = self.get_posts().filter(date__year=year)
         if month:
             self.filtered_posts = self.filtered_posts.filter(date__month=month)

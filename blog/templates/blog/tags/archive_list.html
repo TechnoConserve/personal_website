@@ -13,7 +13,7 @@
                 {% for month in month_list reversed %}
                     <li>
                         <a href="{% routablepageurl index_page "entries_by_date" year.grouper month.list.0|date:"m" %}">
-                            {{ month.list.0|date:"F" }} ({{ forloop.counter }})
+                            {{ month.list.0|date:"F" }} ({{ month.list|length }})
                         </a>
                     </li>
                 {% endfor %}

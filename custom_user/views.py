@@ -21,9 +21,11 @@ def edit_profile(request):
 def user_profile(request, username):
     user = get_object_or_404(CustomUser, username=username)
     posts = BlogPage.objects.filter(owner=user)
+    blog_index = posts[0].get_parent().specific
 
     return render(request, "accounts/user_profile.html", {
         'user_obj': user,
         'email_hash': hashlib.md5(user.email.encode('ascii', 'ignore')).hexdigest(),
+        'blog_index': blog_index,
         'posts': posts,
     })

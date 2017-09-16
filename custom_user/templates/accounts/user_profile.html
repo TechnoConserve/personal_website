@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% load humanize wagtailcore_tags %}
+{% load humanize wagtailcore_tags wagtailroutablepage_tags %}
 
 {% block title %}{% firstof user_obj.profile.name user_obj.username %}{% endblock %}
 
@@ -20,10 +20,16 @@
                 {{ posts|length }} post{{ posts|pluralize }}. The three most recent posts are listed below:
             </p>
             <ul>
-                {% for post in posts|slice:"4" %}
+                {% for post in posts|slice:"3" %}
                     <li><a href="{% pageurl post %}">{{ post.title }}</a></li>
                 {% endfor %}
             </ul>
+            {% if posts|length > 3 %}
+                <p>
+                    If that wasn't enough to wet your whistle, you can see all of {{ user_obj }}'s posts
+                    <a href="{% routablepageurl blog_index 'blogpages_by_author' user_obj.username %}">here</a>.
+                </p>
+            {% endif %}
         {% else %}
             <p>
                 <b>{{ user_obj.get_full_name }}</b> hasn't done much here yet. We would know if they had.

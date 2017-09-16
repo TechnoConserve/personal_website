@@ -1,10 +1,13 @@
 from datetime import date
 
+from django.shortcuts import get_object_or_404
 from django.utils.dateformat import DateFormat
 from django.utils.formats import date_format
 
 from wagtail.contrib.wagtailroutablepage.models import RoutablePageMixin, route
 from wagtail.wagtailcore.models import Page
+
+from custom_user.models import CustomUser
 
 
 class BlogRoutes(RoutablePageMixin):
@@ -21,4 +24,10 @@ class BlogRoutes(RoutablePageMixin):
         if day:
             self.filtered_posts = self.filtered_posts.filter(date__day=day)
             self.search_term = date_format(date(int(year), int(month), int(day)))
+        return Page.serve(self, request, *args, **kwargs)
+
+    @route(r'^author/(?P<author>[\w.@+-]+)/$')
+    def blogpages_by_author(self, request, author, *args, **kwargs):
+        user = get_object_or_404(CustomUser, username=author)
+        self.filtered_posts = self.get_posts().filter(owner=user)
         return Page.serve(self, request, *args, **kwargs)

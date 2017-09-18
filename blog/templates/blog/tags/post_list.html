@@ -12,6 +12,7 @@
             {% endwith %}
 
             <p>{{ post.intro }}</p>
+            <p>{{ post.body|truncatewords_html:75 }}</p>
         </div>
     {% endwith %}
 {% endfor %}

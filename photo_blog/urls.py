@@ -46,6 +46,7 @@ urlpatterns = [
     url(r'^accounts/', include('registration.backends.hmac.urls')),
 
     url(r'^blog/', include('blog.urls')),
+    url(r'^sensor/', include('sensor.urls')),
 
     # User stats
     url(r'^~(?P<username>[\w.@+-]+)/$', account_views.user_profile, name='user_profile'),

@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     'home',  # Customize Wagtail
     'blog',
     'custom_user',
+    'sensor'
 ]
 
 MIDDLEWARE = [
@@ -216,3 +217,15 @@ ACCOUNT_ACTIVATION_DAYS = 7
 
 # Django auth settings
 LOGIN_REDIRECT_URL = 'edit_profile'
+
+# Django Channels
+# In settings.py
+CHANNEL_LAYERS = {
+    "default": {
+        "BACKEND": "asgi_rabbitmq.RabbitmqChannelLayer",
+        "ROUTING": "sensor.routing.channel_routing",
+        "CONFIG": {
+            "url": "amqp://guest:guest@localhost:5672",
+        },
+    },
+}

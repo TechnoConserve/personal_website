@@ -1,0 +1,22 @@
+{% load static %}
+
+<html>
+<head>
+    <title>Sensor Display</title>
+    <script type="text/javascript" src="{% static 'channels/js/websocketbridge.js' %}"></script>
+    <script>
+        const webSocketBridge = new channels.WebSocketBridge();
+        webSocketBridge.connect();
+        webSocketBridge.listen(function (action, stream) {
+            console.log(action, stream);
+        });
+
+        webSocketBridge.socket.addEventListener('open', function() {
+            console.log('Connected to WebSocket');
+        })
+    </script>
+</head>
+<body>
+
+</body>
+</html>

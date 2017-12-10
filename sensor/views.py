@@ -1,3 +1,7 @@
 from django.shortcuts import render
 
-# Create your views here.
+
+def sensor(request):
+    return render(request, "sensor/sensor-display.html", {
+        'sensor': '99',
+    })

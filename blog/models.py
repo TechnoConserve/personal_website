@@ -23,6 +23,7 @@ LANGUAGES = (
     ('http', 'HTTP'),
     ('javascript', 'JavaScript'),
     ('bash', 'Bash'),
+    ('dockerfile', 'Dockerfile'),
     ('ini', 'Ini'),
     ('sql', 'SQL'),
     ('json', 'JSON'),

@@ -2,16 +2,24 @@
 
 {% load wagtailcore_tags %}
 
-{% block body_class %}template-homepage{% endblock %}
+{% block body_class %}homepage{% endblock %}
+
 
 {% block content %}
-    <div class="jumbotron">
-      <div class="container">
-        <h1>Welcome</h1>
-        <p>I use this website to document miscellaneous projects and perform a variety of web experimentation which you can read about on my blog.</p>
-        <p><a class="btn btn-primary btn-lg" href="{% slugurl 'blog' %}" role="button">Learn more &raquo;</a></p>
-      </div>
+    <div class="col-md-10">
+        <div class="jumbotron">
+            <div class="container">
+                <h1>Welcome</h1>
+                <p>I use this website to document miscellaneous projects and perform a variety of web experimentation which you can read about on my blog.</p>
+                <p><a class="btn btn-primary btn-lg" href="{% slugurl 'blog' %}" role="button">Learn more &raquo;</a></p>
+            </div>
+        </div>
+        {{ page.body|richtext }}
     </div>
+{% endblock %}
 
-    {{ page.body|richtext }}
+{% block ad %}
+    <div class="col-md-2">
+        {{ block.super }}
+    </div>
 {% endblock %}

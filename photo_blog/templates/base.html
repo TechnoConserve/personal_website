@@ -37,8 +37,13 @@
         ga('send', 'pageview');
 
     </script>
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-2002495315212309",
+            enable_page_level_ads: true
+        });
+    </script>
     <!--[if lt IE 9]>
           <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
           <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
@@ -92,7 +97,6 @@
 </nav>
 
 <div class="main container">
-
     {% block heading %}
         <div class="page-header">
             <h1>{% block heading_text %}{{ self.title }}{% endblock %}</h1>
@@ -102,6 +106,18 @@
 
     {% block content %}{% endblock %}
 
+    {% block ad %}
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- averyuslaner.com -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-2002495315212309"
+             data-ad-slot="7159456872"
+             data-ad-format="auto"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    {% endblock ad %}
 </div>
 
 {# External javascript #}

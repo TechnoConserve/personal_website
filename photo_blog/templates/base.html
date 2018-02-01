@@ -1,5 +1,4 @@
 {% load static wagtailcore_tags wagtailuserbar %}
-{% wagtailuserbar %}
 
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -8,6 +7,8 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="{% static 'img/favicon.png' %}">
 
     <title>{% block title %}{% if self.seo_title %}{{ self.seo_title }}{% else %}{{ self.title }}{% endif %}{% endblock %}{% block title_postfix %} | Avery's WebCastle{% endblock %}</title>
 
@@ -132,5 +133,6 @@
 
 {% block extra_js %}{% endblock %} {# Override this block in individual templates in order to add javascript on a template by template basis #}
 
+{% wagtailuserbar %}
 </body>
 </html>

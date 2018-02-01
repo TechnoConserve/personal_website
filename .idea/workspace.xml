@@ -1,13 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5daa2f32-aa60-4cce-90a6-f0a4d8f21f6f" name="Default" comment="Added preview of first 75 words for each blog post to the blog index.">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/photo_blog.iml" afterPath="$PROJECT_DIR$/.idea/photo_blog.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/templates/blog/blog_index_page.html" afterPath="$PROJECT_DIR$/blog/templates/blog/blog_index_page.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/home/templates/home/home_page.html" afterPath="$PROJECT_DIR$/home/templates/home/home_page.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photo_blog/templates/base.html" afterPath="$PROJECT_DIR$/photo_blog/templates/base.html" />
+    <list default="true" id="5daa2f32-aa60-4cce-90a6-f0a4d8f21f6f" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/7cc24812-5fa1-44be-b35c-f73ac1a81582.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/7cc24812-5fa1-44be-b35c-f73ac1a81582/storage.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/photo_blog.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/css/base.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/css/changelists.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/css/dashboard.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/css/fonts.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/css/forms.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/css/login.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/css/rtl.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/css/widgets.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/fonts/LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/fonts/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/fonts/Roboto-Bold-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/fonts/Roboto-Light-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/fonts/Roboto-Regular-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/img/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/img/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/img/gis/move_vertex_off.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/img/gis/move_vertex_on.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/img/icon-addlink.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/img/icon-clock.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/img/icon-deletelink.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/img/icon-no.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/img/icon-unknown.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/img/sorting-icons.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/img/tooltag-arrowright.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/js/SelectFilter2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/js/actions.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/js/actions.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/js/cancel.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/js/change_form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/js/core.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/js/inlines.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/js/inlines.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/js/prepopulate.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/js/prepopulate.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/js/prepopulate_init.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/js/timeparse.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/js/vendor/jquery/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/js/vendor/xregexp/xregexp.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/blog/css/blog.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/css/layouts/compare-revisions.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/css/layouts/login.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/css/panels/rich-text.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/css/userbar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/css/vendor/jquery-ui/images/ui-bg_flat_0_aaaaaa_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/css/vendor/jquery-ui/images/ui-bg_flat_100_e8f8f9_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/css/vendor/jquery-ui/images/ui-bg_flat_100_ffffff_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/css/vendor/jquery-ui/images/ui-bg_flat_65_49c0c1_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/css/vendor/tagit.ui-zendesk.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/opensans-bold.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/opensans-bold.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/opensans-bolditalic.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/opensans-italic.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/opensans-italic.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/opensans-lightitalic.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/opensans-lightitalic.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/opensans-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/opensans-regular.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/opensans-semibold.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/opensans-semibold.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/opensans-semibolditalic.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/robotoslab-bold.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/robotoslab-bold.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/robotoslab-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/robotoslab-regular.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/wagtail-icomoon.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/images/bg-dark-diag.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/images/email-header.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/images/logo-body.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/images/logo-eyeclosed.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/images/logo-eyeopen.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/images/logo-tail.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/js/blocks/list.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/js/blocks/sequence.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/js/blocks/stream.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/js/blocks/struct.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/js/expanding_formset.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/js/hallo-plugins/hallo-hr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/js/hallo-plugins/hallo-requireparagraphs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/js/hallo-plugins/hallo-wagtaillink.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/js/page-chooser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/js/page-editor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/js/privacy-switch.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/js/submenu.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/js/upgrade_notify.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/js/vendor/bootstrap-modal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/js/vendor/hallo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/js/vendor/jquery-ui-1.10.3.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/js/vendor/jquery.ba-throttle-debounce.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/js/vendor/jquery.datetimepicker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/js/vendor/modernizr-2.6.2.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/js/wagtailadmin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtaildocs/js/add-multiple.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtaildocs/js/document-chooser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailembeds/js/hallo-plugins/hallo-wagtailembeds.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailimages/js/add-multiple.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailimages/js/focal-point-chooser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailimages/js/image-chooser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailimages/js/vendor/canvas-to-blob.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailimages/js/vendor/load-image.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailsnippets/js/snippet-chooser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailusers/css/groups_edit.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailusers/js/group-form.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/shelf/" />
     <ignored mask="*.pem" />
@@ -54,28 +160,20 @@
       <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/photo_blog/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="109" column="8" lean-forward="false" selection-start-line="109" selection-start-column="8" selection-end-line="118" selection-end-column="17" />
-              <folding />
+            <state relative-caret-position="413">
+              <caret line="137" column="7" lean-forward="false" selection-start-line="137" selection-start-column="7" selection-end-line="137" selection-end-column="7" />
+              <folding>
+                <element signature="n#style#0;n#ins#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="global.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/photo_blog/static/css/global.css">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="blog_index_page.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/blog/templates/blog/blog_index_page.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="39" column="49" lean-forward="false" selection-start-line="39" selection-start-column="49" selection-end-line="39" selection-end-column="49" />
+            <state relative-caret-position="367">
+              <caret line="83" column="6" lean-forward="false" selection-start-line="83" selection-start-column="6" selection-end-line="83" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -84,9 +182,11 @@
       <file leaf-file-name="home_page.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/home/templates/home/home_page.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="25" lean-forward="true" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
-              <folding />
+            <state relative-caret-position="221">
+              <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+              <folding>
+                <element signature="e#517#524#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -117,6 +217,8 @@
       <find>get_entry_url</find>
       <find>entries_by_date</find>
       <find>div</find>
+      <find>icon</find>
+      <find>head</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
@@ -143,7 +245,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/home/models.py" />
         <option value="$PROJECT_DIR$/templates/admin/base_site.html" />
         <option value="$PROJECT_DIR$/blog/templates/blog/blog_tag_index_page.html" />
         <option value="$PROJECT_DIR$/blog/blocks/heading.html" />
@@ -161,7 +262,6 @@
         <option value="$PROJECT_DIR$/photo_blog/settings/production.py" />
         <option value="$USER_HOME$/.profile" />
         <option value="$PROJECT_DIR$/static/admin/css/base.css" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/photo_blog/templates/registration/activate.html" />
         <option value="$PROJECT_DIR$/photo_blog/templates/registration/activation_email.txt" />
         <option value="$PROJECT_DIR$/photo_blog/templates/registration/activation_email_subject.txt" />
@@ -191,9 +291,11 @@
         <option value="$PROJECT_DIR$/custom_user/templates/accounts/user_profile.html" />
         <option value="$PROJECT_DIR$/blog/templates/blog/tags/post_list.html" />
         <option value="$PROJECT_DIR$/photo_blog/static/css/global.css" />
-        <option value="$PROJECT_DIR$/photo_blog/templates/base.html" />
-        <option value="$PROJECT_DIR$/home/templates/home/home_page.html" />
         <option value="$PROJECT_DIR$/blog/templates/blog/blog_index_page.html" />
+        <option value="$PROJECT_DIR$/custom_user/admin.py" />
+        <option value="$PROJECT_DIR$/home/templates/home/home_page.html" />
+        <option value="$PROJECT_DIR$/photo_blog/templates/base.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -204,7 +306,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="4">
-    <option name="x" value="432" />
+    <option name="x" value="656" />
     <option name="y" value="27" />
     <option name="width" value="1268" />
     <option name="height" value="1021" />
@@ -225,6 +327,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -235,24 +339,6 @@
             <path>
               <item name="averyuslaner.com" type="b2602c69:ProjectViewProjectNode" />
               <item name="averyuslaner.com" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="averyuslaner.com" type="b2602c69:ProjectViewProjectNode" />
-              <item name="averyuslaner.com" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="averyuslaner.com" type="b2602c69:ProjectViewProjectNode" />
-              <item name="averyuslaner.com" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="averyuslaner.com" type="b2602c69:ProjectViewProjectNode" />
-              <item name="averyuslaner.com" type="462c0819:PsiDirectoryNode" />
               <item name="home" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -277,42 +363,16 @@
               <item name="averyuslaner.com" type="b2602c69:ProjectViewProjectNode" />
               <item name="averyuslaner.com" type="462c0819:PsiDirectoryNode" />
               <item name="photo_blog" type="462c0819:PsiDirectoryNode" />
-              <item name="settings" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="averyuslaner.com" type="b2602c69:ProjectViewProjectNode" />
-              <item name="averyuslaner.com" type="462c0819:PsiDirectoryNode" />
-              <item name="photo_blog" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="averyuslaner.com" type="b2602c69:ProjectViewProjectNode" />
-              <item name="averyuslaner.com" type="462c0819:PsiDirectoryNode" />
-              <item name="photo_blog" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="averyuslaner.com" type="b2602c69:ProjectViewProjectNode" />
-              <item name="averyuslaner.com" type="462c0819:PsiDirectoryNode" />
-              <item name="photo_blog" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="averyuslaner.com" type="b2602c69:ProjectViewProjectNode" />
-              <item name="averyuslaner.com" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/photo_blog/templates" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path" value="$USER_HOME$/Downloads/nodejs/node-v6.9.1-linux-x64/bin/node" />
@@ -635,20 +695,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1482365092750</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Enabled blog index page to display thumbnails of images for posts that include an image gallery.">
-      <created>1483393561889</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1483393561889</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Added tagging to blog post model.">
-      <created>1483393998564</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1483393998564</updated>
     </task>
     <task id="LOCAL-00014" summary="Removed duplicate date field in blog post model.">
       <created>1483394803885</created>
@@ -979,34 +1025,61 @@
       <option name="project" value="LOCAL" />
       <updated>1515004286118</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="Added Custom User Model to Django Admin&#10;&#10;Registered CustomUser model to django admin.">
+      <created>1517520628317</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1517520628317</updated>
+    </task>
+    <task id="LOCAL-00062" summary="Base Template Restructuring For Favicon&#10;&#10;Added favicon image to source control. Linked to favicon in base template. Moved Wagtail userbar include to inside body tag.">
+      <created>1517523825283</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1517523825283</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="432" y="27" width="1268" height="1021" extended-state="4" />
+    <frame x="656" y="27" width="1268" height="1021" extended-state="4" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919955" sideWeight="0.50823724" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32919955" sideWeight="0.49176276" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.59188277" sideWeight="0.4969605" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919955" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14881623" sideWeight="0.49354145" order="16" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21911038" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="manage.py@photo_blog" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919955" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932165" sideWeight="0.5" order="19" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992464" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932165" sideWeight="0.50533617" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.59190375" sideWeight="0.4969605" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932165" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32919955" sideWeight="0.49466383" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14989059" sideWeight="0.49354145" order="16" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21581548" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932165" sideWeight="0.5" order="19" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32822758" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992464" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="manage.py@photo_blog" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919955" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32822758" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1066,9 +1139,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="true" />
-    <MESSAGE value="Navbar project title now links back to home page." />
-    <MESSAGE value="Added templates for account registration process." />
-    <MESSAGE value="Refactored template locations for wagtail blocks. Added VPS IP address to allowed hosts for debugging." />
     <MESSAGE value="Made edits to email settings and django-registration form to comply with&#10; custom user registration workflow." />
     <MESSAGE value="Added default django authentication urls." />
     <MESSAGE value="Styled activation complete template." />
@@ -1091,7 +1161,10 @@
     <MESSAGE value="Refactored variables to make them more sensible. Removed extra unused code from blog urls." />
     <MESSAGE value="Added preview of first 75 words for each blog post to the blog index." />
     <MESSAGE value="Upgraded packages.&#10;&#10;Modified requirements file to reflect package upgrades." />
-    <option name="LAST_COMMIT_MESSAGE" value="Upgraded packages.&#10;&#10;Modified requirements file to reflect package upgrades." />
+    <MESSAGE value="Added Custom User Model to Django Admin&#10;&#10;Registered CustomUser model to django admin." />
+    <MESSAGE value="Base Template Restructuring For Favicon&#10;&#10;Added favicon image to source control. Linked to favicon in base template. Moved Wagtail userbar include to inside body tag." />
+    <MESSAGE value="Updated ignore and version control tracking&#10;&#10;Updated gitignore file to ignore Pycharm files, .pem files, and removed static files from git tracking that are included in the gitignore file." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated ignore and version control tracking&#10;&#10;Updated gitignore file to ignore Pycharm files, .pem files, and removed static files from git tracking that are included in the gitignore file." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1100,48 +1173,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/admin/css/base.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="376" column="0" lean-forward="true" selection-start-line="376" selection-start-column="0" selection-end-line="376" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="101" column="9" lean-forward="true" selection-start-line="101" selection-start-column="9" selection-end-line="101" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/photo_blog/templates/registration/activation_email_subject.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/photo_blog/templates/registration/password_reset_email.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home/templatetags/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home/templatetags/home_extras.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/photo_blog/templates/registration/activation_email.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1203,8 +1234,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/custom_user/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="19" column="23" lean-forward="true" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+        <state relative-caret-position="255">
+          <caret line="19" column="23" lean-forward="false" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1282,6 +1314,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#14#0" expanded="false" />
+            <marker date="1517519721540" expanded="true" signature="1040:1046" ph="..." />
+            <marker date="1517519721540" expanded="true" signature="1040:1048" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1301,8 +1338,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/custom_user/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
-          <caret line="65" column="58" lean-forward="false" selection-start-line="65" selection-start-column="58" selection-end-line="65" selection-end-column="58" />
+        <state relative-caret-position="1037">
+          <caret line="65" column="66" lean-forward="false" selection-start-line="65" selection-start-column="66" selection-end-line="65" selection-end-column="66" />
+          <folding>
+            <element signature="e#0#68#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1357,10 +1397,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/photo_blog/settings/base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
+        <state relative-caret-position="1462">
           <caret line="104" column="14" lean-forward="false" selection-start-line="104" selection-start-column="14" selection-end-line="104" selection-end-column="14" />
           <folding>
-            <marker date="1515003778382" expanded="true" signature="741:852" ph="..." />
+            <marker date="1517519721540" expanded="true" signature="741:852" ph="..." />
+            <marker date="1517519721540" expanded="true" signature="741:1439" ph="..." />
+            <marker date="1517519721540" expanded="true" signature="1456:1969" ph="..." />
+            <marker date="1517519721540" expanded="true" signature="2019:2630" ph="..." />
+            <marker date="1517519721540" expanded="true" signature="2025:2627" ph="..." />
+            <marker date="1517519721540" expanded="true" signature="2200:2620" ph="..." />
+            <marker date="1517519721540" expanded="true" signature="2236:2505" ph="..." />
+            <marker date="1517519721540" expanded="true" signature="2534:2609" ph="..." />
+            <marker date="1517519721540" expanded="true" signature="2684:2759" ph="..." />
+            <marker date="1517519721540" expanded="true" signature="2791:3067" ph="..." />
+            <marker date="1517519721540" expanded="true" signature="3073:3174" ph="..." />
+            <marker date="1517519721540" expanded="true" signature="3210:3307" ph="..." />
+            <marker date="1517519721540" expanded="true" signature="3315:3402" ph="..." />
+            <marker date="1517519721540" expanded="true" signature="3410:3498" ph="..." />
+            <marker date="1517519721540" expanded="true" signature="3506:3595" ph="..." />
+            <marker date="1517519721540" expanded="true" signature="3621:3968" ph="..." />
+            <marker date="1517519721540" expanded="true" signature="4060:4165" ph="..." />
+            <marker date="1517519721540" expanded="true" signature="4077:4163" ph="..." />
+            <marker date="1517519721540" expanded="true" signature="4169:4245" ph="..." />
+            <marker date="1517519721540" expanded="true" signature="4345:4446" ph="..." />
+            <marker date="1517519721540" expanded="true" signature="4471:4594" ph="..." />
+            <marker date="1517519721540" expanded="true" signature="5230:5280" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1427,23 +1488,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home/templates/home/home_page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="25" lean-forward="true" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/photo_blog/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="109" column="8" lean-forward="false" selection-start-line="109" selection-start-column="8" selection-end-line="118" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1451,6 +1495,70 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="39" column="49" lean-forward="false" selection-start-line="39" selection-start-column="49" selection-end-line="39" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom_user/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom_user/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom_user/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/img/favicon.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photo_blog/static/img/favicon.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/templates/home/home_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+          <folding>
+            <element signature="e#517#524#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photo_blog/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="137" column="7" lean-forward="false" selection-start-line="137" selection-start-column="7" selection-end-line="137" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#ins#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="83" column="6" lean-forward="false" selection-start-line="83" selection-start-column="6" selection-end-line="83" selection-end-column="6" />
           <folding />
         </state>
       </provider>

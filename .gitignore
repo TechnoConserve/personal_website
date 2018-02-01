@@ -98,10 +98,9 @@ db.*
 mysql_database.cnf
 
 # PyCharm
-workspace.xml
 tasks.xml
 dataSources.ids
-dataSources.xml
-dataSources.local.xml
 /static/
-!/photo_blog/static/
+/.idea
+fullchain.pem
+privkey.pem

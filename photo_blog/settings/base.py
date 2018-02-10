@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'modelcluster',
     'taggit',
     'django_uwsgi',
+    'webpack_loader',
 
     'home',  # Customize Wagtail
     'blog',
@@ -169,6 +170,7 @@ STATICFILES_FINDERS = [
 
 STATICFILES_DIRS = [
     os.path.join(PROJECT_DIR, 'static'),
+    os.path.join(BASE_DIR, 'djreact/static'),
 ]
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
@@ -215,3 +217,11 @@ ACCOUNT_ACTIVATION_DAYS = 7
 
 # Django auth settings
 LOGIN_REDIRECT_URL = 'edit_profile'
+
+# ReactJS
+WEBPACK_LOADER = {
+    'DEFAULT': {
+        'BUNDLE_DIR_NAME': 'bundles/local/',  # end with slash
+        'STATS_FILE': os.path.join(BASE_DIR, 'webpack-stats-local.json'),
+    }
+}

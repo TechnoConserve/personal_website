@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load render_bundle from webpack_loader %}
 
 {% load wagtailcore_tags %}
 
@@ -7,14 +8,9 @@
 
 {% block content %}
     <div class="col-md-10">
-        <div class="jumbotron">
-            <div class="container">
-                <h1>Welcome</h1>
-                <p>I use this website to document miscellaneous projects and perform a variety of web experimentation which you can read about on my blog.</p>
-                <p><a class="btn btn-primary btn-lg" href="{% slugurl 'blog' %}" role="button">Learn more &raquo;</a></p>
-            </div>
-        </div>
-        {{ page.body|richtext }}
+        <div id="App1"></div>
+        {% render_bundle 'vendors' %}
+        {% render_bundle 'App1' %}
     </div>
 {% endblock %}
 

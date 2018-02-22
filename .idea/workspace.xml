@@ -1,133 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5daa2f32-aa60-4cce-90a6-f0a4d8f21f6f" name="Default" comment="Version control tracking fix&#10;&#10;Failed to correctly modify file tracking in previous commit. This commit correctly updates tracking to reflect desired tracking of files as specified by gitignore file.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.babelrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/djreact/static/bundles/local/App1-053c4f4397c0e5aace1e.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/djreact/static/bundles/local/vendors.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/reactjs/App1.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/reactjs/components/Headline.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/reactjs/containers/App1Container.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webpack-stats-local.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webpack.base.config.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webpack.local.config.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/7cc24812-5fa1-44be-b35c-f73ac1a81582.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/7cc24812-5fa1-44be-b35c-f73ac1a81582/storage.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/photo_blog.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/css/base.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/css/changelists.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/css/dashboard.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/css/fonts.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/css/forms.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/css/login.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/css/rtl.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/css/widgets.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/fonts/LICENSE.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/fonts/README.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/fonts/Roboto-Bold-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/fonts/Roboto-Light-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/fonts/Roboto-Regular-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/img/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/img/README.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/img/gis/move_vertex_off.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/img/gis/move_vertex_on.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/img/icon-addlink.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/img/icon-clock.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/img/icon-deletelink.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/img/icon-no.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/img/icon-unknown.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/img/sorting-icons.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/img/tooltag-arrowright.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/js/SelectFilter2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/js/actions.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/js/actions.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/js/cancel.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/js/change_form.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/js/core.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/js/inlines.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/js/inlines.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/js/prepopulate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/js/prepopulate.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/js/prepopulate_init.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/js/timeparse.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/js/vendor/jquery/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/js/vendor/xregexp/xregexp.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/blog/css/blog.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/css/layouts/compare-revisions.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/css/layouts/login.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/css/panels/rich-text.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/css/userbar.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/css/vendor/jquery-ui/images/ui-bg_flat_0_aaaaaa_40x100.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/css/vendor/jquery-ui/images/ui-bg_flat_100_e8f8f9_40x100.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/css/vendor/jquery-ui/images/ui-bg_flat_100_ffffff_40x100.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/css/vendor/jquery-ui/images/ui-bg_flat_65_49c0c1_40x100.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/css/vendor/tagit.ui-zendesk.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/opensans-bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/opensans-bold.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/opensans-bolditalic.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/opensans-italic.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/opensans-italic.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/opensans-lightitalic.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/opensans-lightitalic.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/opensans-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/opensans-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/opensans-semibold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/opensans-semibold.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/opensans-semibolditalic.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/robotoslab-bold.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/robotoslab-bold.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/robotoslab-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/robotoslab-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/wagtail-icomoon.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/images/bg-dark-diag.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/images/email-header.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/images/logo-body.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/images/logo-eyeclosed.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/images/logo-eyeopen.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/images/logo-tail.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/js/blocks/list.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/js/blocks/sequence.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/js/blocks/stream.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/js/blocks/struct.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/js/expanding_formset.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/js/hallo-plugins/hallo-hr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/js/hallo-plugins/hallo-requireparagraphs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/js/hallo-plugins/hallo-wagtaillink.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/js/page-chooser.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/js/page-editor.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/js/privacy-switch.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/js/submenu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/js/upgrade_notify.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/js/vendor/bootstrap-modal.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/js/vendor/hallo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/js/vendor/jquery-ui-1.10.3.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/js/vendor/jquery.ba-throttle-debounce.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/js/vendor/jquery.datetimepicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/js/vendor/modernizr-2.6.2.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailadmin/js/wagtailadmin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtaildocs/js/add-multiple.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtaildocs/js/document-chooser.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailembeds/js/hallo-plugins/hallo-wagtailembeds.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailimages/js/add-multiple.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailimages/js/focal-point-chooser.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailimages/js/image-chooser.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailimages/js/vendor/canvas-to-blob.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailimages/js/vendor/load-image.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailsnippets/js/snippet-chooser.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailusers/css/groups_edit.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/wagtailusers/js/group-form.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/home/templates/home/home_page.html" afterPath="$PROJECT_DIR$/home/templates/home/home_page.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photo_blog/settings/base.py" afterPath="$PROJECT_DIR$/photo_blog/settings/base.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
+    <list default="true" id="5daa2f32-aa60-4cce-90a6-f0a4d8f21f6f" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7cc24812-5fa1-44be-b35c-f73ac1a81582.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7cc24812-5fa1-44be-b35c-f73ac1a81582/storage.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/photo_blog.iml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/home/templates/home/home_page.html" afterPath="$PROJECT_DIR$/home/templates/home/home_page.html" />
+      <change beforePath="$PROJECT_DIR$/static/admin/css/base.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/admin/css/changelists.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/admin/css/dashboard.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/admin/css/fonts.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/admin/css/forms.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/admin/css/login.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/admin/css/rtl.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/admin/css/widgets.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/admin/fonts/LICENSE.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/admin/fonts/README.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/admin/fonts/Roboto-Bold-webfont.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/admin/fonts/Roboto-Light-webfont.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/admin/fonts/Roboto-Regular-webfont.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/admin/img/LICENSE" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/admin/img/README.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/admin/img/gis/move_vertex_off.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/admin/img/gis/move_vertex_on.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/admin/img/icon-addlink.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/admin/img/icon-clock.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/admin/img/icon-deletelink.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/admin/img/icon-no.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/admin/img/icon-unknown.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/admin/img/sorting-icons.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/admin/img/tooltag-arrowright.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/SelectFilter2.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/actions.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/actions.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/cancel.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/change_form.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/core.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/inlines.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/inlines.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/prepopulate.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/prepopulate.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/prepopulate_init.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/timeparse.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/jquery/jquery.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/xregexp/xregexp.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/blog/css/blog.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/css/layouts/compare-revisions.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/css/layouts/login.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/css/panels/rich-text.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/css/userbar.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/css/vendor/jquery-ui/images/ui-bg_flat_0_aaaaaa_40x100.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/css/vendor/jquery-ui/images/ui-bg_flat_100_e8f8f9_40x100.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/css/vendor/jquery-ui/images/ui-bg_flat_100_ffffff_40x100.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/css/vendor/jquery-ui/images/ui-bg_flat_65_49c0c1_40x100.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/css/vendor/tagit.ui-zendesk.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/opensans-bold.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/opensans-bold.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/opensans-bolditalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/opensans-italic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/opensans-italic.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/opensans-lightitalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/opensans-lightitalic.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/opensans-regular.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/opensans-regular.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/opensans-semibold.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/opensans-semibold.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/opensans-semibolditalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/robotoslab-bold.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/robotoslab-bold.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/robotoslab-regular.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/robotoslab-regular.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/wagtail-icomoon.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/images/bg-dark-diag.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/images/email-header.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/images/logo-body.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/images/logo-eyeclosed.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/images/logo-eyeopen.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/images/logo-tail.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/js/blocks/list.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/js/blocks/sequence.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/js/blocks/stream.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/js/blocks/struct.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/js/expanding_formset.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/js/hallo-plugins/hallo-hr.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/js/hallo-plugins/hallo-requireparagraphs.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/js/hallo-plugins/hallo-wagtaillink.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/js/page-chooser.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/js/page-editor.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/js/privacy-switch.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/js/submenu.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/js/upgrade_notify.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/js/vendor/bootstrap-modal.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/js/vendor/hallo.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/js/vendor/jquery-ui-1.10.3.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/js/vendor/jquery.ba-throttle-debounce.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/js/vendor/jquery.datetimepicker.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/js/vendor/modernizr-2.6.2.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/js/wagtailadmin.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/wagtaildocs/js/add-multiple.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/wagtaildocs/js/document-chooser.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/wagtailembeds/js/hallo-plugins/hallo-wagtailembeds.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/wagtailimages/js/add-multiple.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/wagtailimages/js/focal-point-chooser.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/wagtailimages/js/image-chooser.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/wagtailimages/js/vendor/canvas-to-blob.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/wagtailimages/js/vendor/load-image.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/wagtailsnippets/js/snippet-chooser.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/wagtailusers/css/groups_edit.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/wagtailusers/js/group-form.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/webpack.base.config.js" afterPath="$PROJECT_DIR$/webpack.base.config.js" />
+      <change beforePath="$PROJECT_DIR$/webpack.local.config.js" afterPath="$PROJECT_DIR$/webpack.local.config.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/shelf/" />
     <ignored mask="*.pem" />
@@ -171,51 +159,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="base.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/photo_blog/settings/base.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="173" column="1" lean-forward="true" selection-start-line="173" selection-start-column="1" selection-end-line="173" selection-end-column="1" />
-              <folding>
-                <marker date="1518227916686" expanded="true" signature="741:852" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="webpack-stats-local.json" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/webpack-stats-local.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="25" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="home_page.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/home/templates/home/home_page.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="30" lean-forward="false" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+            <state relative-caret-position="119">
+              <caret line="7" column="30" lean-forward="false" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/photo_blog/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-440">
-              <caret line="7" column="57" lean-forward="false" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
-              <folding>
-                <marker date="1518223371136" expanded="true" signature="0:1385" ph="{&quot;name&quot;: &quot;photo_blog&quot;...}" />
-                <marker date="1518223371136" expanded="true" signature="69:539" ph="{&quot;babel-core&quot;: &quot;^6.6.5&quot;...}" />
-                <marker date="1518223371136" expanded="true" signature="559:935" ph="{&quot;babel-cli&quot;: &quot;^6.26.0&quot;...}" />
-                <marker date="1518223371136" expanded="true" signature="994:1057" ph="{&quot;test&quot;: &quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;...}" />
-                <marker date="1518223371136" expanded="true" signature="1075:1171" ph="{&quot;type&quot;: &quot;git&quot;...}" />
-                <marker date="1518223371136" expanded="true" signature="1232:1308" ph="{&quot;url&quot;: &quot;https://github.com/TechnoConserve/personal_website/issues&quot;...}" />
-              </folding>
+            <state relative-caret-position="835">
+              <caret line="137" column="7" lean-forward="false" selection-start-line="137" selection-start-column="7" selection-end-line="137" selection-end-column="7" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -223,8 +182,8 @@
       <file leaf-file-name="webpack.base.config.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webpack.base.config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="32" column="1" lean-forward="false" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+            <state relative-caret-position="17">
+              <caret line="1" column="33" lean-forward="false" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -234,17 +193,7 @@
         <entry file="file://$PROJECT_DIR$/webpack.local.config.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".babelrc" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.babelrc">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="1" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+              <caret line="15" column="24" lean-forward="false" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -262,7 +211,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="App1Container.jsx" pinned="false" current-in-tab="false">
+      <file leaf-file-name="App1Container.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/reactjs/containers/App1Container.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
@@ -278,7 +227,7 @@
         <entry file="file://$PROJECT_DIR$/reactjs/components/Headline.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
-              <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+              <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -384,15 +333,15 @@
         <option value="$PROJECT_DIR$/custom_user/admin.py" />
         <option value="$PROJECT_DIR$/photo_blog/templates/base.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/webpack.base.config.js" />
-        <option value="$PROJECT_DIR$/webpack.local.config.js" />
         <option value="$PROJECT_DIR$/reactjs/App1.jsx" />
         <option value="$PROJECT_DIR$/reactjs/containers/App1Container.jsx" />
         <option value="$PROJECT_DIR$/reactjs/components/Headline.jsx" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/.babelrc" />
-        <option value="$PROJECT_DIR$/home/templates/home/home_page.html" />
         <option value="$PROJECT_DIR$/photo_blog/settings/base.py" />
+        <option value="$PROJECT_DIR$/webpack.base.config.js" />
+        <option value="$PROJECT_DIR$/webpack.local.config.js" />
+        <option value="$PROJECT_DIR$/home/templates/home/home_page.html" />
       </list>
     </option>
   </component>
@@ -402,13 +351,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/node_modules" />
-  </component>
   <component name="ProjectFrameBounds" extendedState="4">
-    <option name="x" value="652" />
+    <option name="x" value="8" />
     <option name="y" value="27" />
-    <option name="width" value="1268" />
+    <option name="width" value="1260" />
     <option name="height" value="1017" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -427,8 +373,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -439,32 +385,6 @@
             <path>
               <item name="averyuslaner.com" type="b2602c69:ProjectViewProjectNode" />
               <item name="averyuslaner.com" type="462c0819:PsiDirectoryNode" />
-              <item name="djreact" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="averyuslaner.com" type="b2602c69:ProjectViewProjectNode" />
-              <item name="averyuslaner.com" type="462c0819:PsiDirectoryNode" />
-              <item name="djreact" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="averyuslaner.com" type="b2602c69:ProjectViewProjectNode" />
-              <item name="averyuslaner.com" type="462c0819:PsiDirectoryNode" />
-              <item name="djreact" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="bundles" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="averyuslaner.com" type="b2602c69:ProjectViewProjectNode" />
-              <item name="averyuslaner.com" type="462c0819:PsiDirectoryNode" />
-              <item name="djreact" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="bundles" type="462c0819:PsiDirectoryNode" />
-              <item name="local" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="averyuslaner.com" type="b2602c69:ProjectViewProjectNode" />
-              <item name="averyuslaner.com" type="462c0819:PsiDirectoryNode" />
               <item name="home" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -479,6 +399,17 @@
               <item name="home" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="home" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="averyuslaner.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="averyuslaner.com" type="462c0819:PsiDirectoryNode" />
+              <item name="photo_blog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="averyuslaner.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="averyuslaner.com" type="462c0819:PsiDirectoryNode" />
+              <item name="photo_blog" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="averyuslaner.com" type="b2602c69:ProjectViewProjectNode" />
@@ -501,7 +432,7 @@
     <property name="settings.editor.selected.configurable" value="settings.github" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/photo_blog/templates" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="nodejs_interpreter_path" value="$USER_HOME$/Downloads/nodejs/node-v6.9.1-linux-x64/bin/node" />
+    <property name="nodejs_interpreter_path" value="node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="$USER_HOME$/Downloads/nodejs/node-v6.9.1-linux-x64/bin/node" />
     <property name="prop_add_unversioned_files" value="true" />
@@ -544,7 +475,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Django server.Personal Site">
+  <component name="RunManager">
     <configuration name="Personal Site" type="Python.DjangoServer" factoryName="Django server" singleton="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -593,14 +524,6 @@
       <option name="runNoReload" value="false" />
       <option name="useCustomRunCommand" value="false" />
       <option name="customRunCommand" value="" />
-    </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
     </configuration>
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -807,6 +730,14 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -821,13 +752,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1482365092750</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Added tags to blog page template.">
-      <created>1483395191404</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1483395191404</updated>
     </task>
     <task id="LOCAL-00016" summary="Added model for index of blog post tags.">
       <created>1483395594949</created>
@@ -1165,34 +1089,42 @@
       <option name="project" value="LOCAL" />
       <updated>1517527620683</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="Initial Conversion of Home Django App to ReactJS App&#10;&#10;Added initial configuration files and made minor additions to base Django settings to allow for inclusion of a ReactJS application on the home landing page within the Home django app.">
+      <created>1518228293589</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1518228293590</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="652" y="27" width="1268" height="1017" extended-state="4" />
+    <frame x="8" y="27" width="1260" height="1017" extended-state="4" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932165" sideWeight="0.50533617" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32919955" sideWeight="0.49466383" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.59190375" sideWeight="0.4969605" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932165" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32919955" sideWeight="0.49466383" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.51747465" sideWeight="0.49354145" order="16" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22322899" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22734761" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932165" sideWeight="0.5" order="19" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992464" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32822758" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="manage.py@photo_blog" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919955" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32822758" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1252,7 +1184,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="true" />
-    <MESSAGE value="Added default django authentication urls." />
     <MESSAGE value="Styled activation complete template." />
     <MESSAGE value="Styled login template." />
     <MESSAGE value="Configured default login page to styled user edit profile page." />
@@ -1277,7 +1208,8 @@
     <MESSAGE value="Base Template Restructuring For Favicon&#10;&#10;Added favicon image to source control. Linked to favicon in base template. Moved Wagtail userbar include to inside body tag." />
     <MESSAGE value="Updated ignore and version control tracking&#10;&#10;Updated gitignore file to ignore Pycharm files, .pem files, and removed static files from git tracking that are included in the gitignore file." />
     <MESSAGE value="Version control tracking fix&#10;&#10;Failed to correctly modify file tracking in previous commit. This commit correctly updates tracking to reflect desired tracking of files as specified by gitignore file." />
-    <option name="LAST_COMMIT_MESSAGE" value="Version control tracking fix&#10;&#10;Failed to correctly modify file tracking in previous commit. This commit correctly updates tracking to reflect desired tracking of files as specified by gitignore file." />
+    <MESSAGE value="Initial Conversion of Home Django App to ReactJS App&#10;&#10;Added initial configuration files and made minor additions to base Django settings to allow for inclusion of a ReactJS application on the home landing page within the Home django app." />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial Conversion of Home Django App to ReactJS App&#10;&#10;Added initial configuration files and made minor additions to base Django settings to allow for inclusion of a ReactJS application on the home landing page within the Home django app." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1554,19 +1486,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/photo_blog/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2329">
-          <caret line="137" column="7" lean-forward="false" selection-start-line="137" selection-start-column="7" selection-end-line="137" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package-lock.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1574,47 +1497,47 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-151">
           <caret line="74" column="15" lean-forward="false" selection-start-line="74" selection-start-column="15" selection-end-line="74" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reactjs/components/Headline.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/reactjs/containers/App1Container.jsx">
+    <entry file="file://$PROJECT_DIR$/webpack-stats-local.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="1" lean-forward="false" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        <state relative-caret-position="0">
+          <caret line="0" column="25" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photo_blog/settings/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="173" column="1" lean-forward="false" selection-start-line="173" selection-start-column="1" selection-end-line="173" selection-end-column="1" />
           <folding>
-            <element signature="e#0#25#0" expanded="true" />
+            <marker date="1518227916686" expanded="true" signature="741:852" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-440">
+        <state relative-caret-position="17">
           <caret line="7" column="57" lean-forward="false" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
-          <folding>
-            <marker date="1518223371136" expanded="true" signature="0:1385" ph="{&quot;name&quot;: &quot;photo_blog&quot;...}" />
-            <marker date="1518223371136" expanded="true" signature="69:539" ph="{&quot;babel-core&quot;: &quot;^6.6.5&quot;...}" />
-            <marker date="1518223371136" expanded="true" signature="559:935" ph="{&quot;babel-cli&quot;: &quot;^6.26.0&quot;...}" />
-            <marker date="1518223371136" expanded="true" signature="994:1057" ph="{&quot;test&quot;: &quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;...}" />
-            <marker date="1518223371136" expanded="true" signature="1075:1171" ph="{&quot;type&quot;: &quot;git&quot;...}" />
-            <marker date="1518223371136" expanded="true" signature="1232:1308" ph="{&quot;url&quot;: &quot;https://github.com/TechnoConserve/personal_website/issues&quot;...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.local.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webpack.base.config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="32" column="1" lean-forward="false" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+        <state relative-caret-position="17">
+          <caret line="1" column="33" lean-forward="false" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="33" />
           <folding />
         </state>
       </provider>
@@ -1627,10 +1550,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home/templates/home/home_page.html">
+    <entry file="file://$PROJECT_DIR$/webpack.local.config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="30" lean-forward="false" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+        <state relative-caret-position="255">
+          <caret line="15" column="24" lean-forward="false" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
           <folding />
         </state>
       </provider>
@@ -1645,29 +1568,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/reactjs/components/Headline.jsx">
+    <entry file="file://$PROJECT_DIR$/photo_blog/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        <state relative-caret-position="835">
+          <caret line="137" column="7" lean-forward="false" selection-start-line="137" selection-start-column="7" selection-end-line="137" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/photo_blog/settings/base.py">
+    <entry file="file://$PROJECT_DIR$/home/templates/home/home_page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="173" column="1" lean-forward="true" selection-start-line="173" selection-start-column="1" selection-end-line="173" selection-end-column="1" />
+        <state relative-caret-position="119">
+          <caret line="7" column="30" lean-forward="false" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reactjs/containers/App1Container.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="1" lean-forward="false" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
           <folding>
-            <marker date="1518227916686" expanded="true" signature="741:852" ph="..." />
+            <element signature="e#0#25#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webpack-stats-local.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="25" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>

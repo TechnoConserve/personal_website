@@ -1,25 +1,21 @@
 {% extends "base.html" %}
 
-{% load wagtailcore_tags %}
+{% load wagtailcore_tags static %}
 
-{% block body_class %}homepage{% endblock %}
+{% block extra_css %}<link rel="stylesheet" type="text/css" href="{% static 'home/css/landing.css' %}">{% endblock %}
 
+{% block heading %}{% endblock %}
 
 {% block content %}
-    <div class="col-md-10">
-        <div class="jumbotron">
-            <div class="container">
-                <h1>Welcome</h1>
-                <p>I use this website to document miscellaneous projects and perform a variety of web experimentation which you can read about on my blog.</p>
-                <p><a class="btn btn-primary btn-lg" href="{% slugurl 'blog' %}" role="button">Learn more &raquo;</a></p>
-            </div>
+    <header class="header-intro">
+        <div class="background-image">
+            <img class="slow-grow" src="{% static 'home/img/bee_on_flower_comp.JPG' %}" alt="Honey bees on flower.">
         </div>
-        {{ page.body|richtext }}
-    </div>
-{% endblock %}
-
-{% block ad %}
-    <div class="col-md-2">
-        {{ block.super }}
-    </div>
+        <div class="header-text">
+            <h1>
+                A holding tank for my thoughts on photography, programming, and the world in general.
+            </h1>
+            <a class="button" href="{% slugurl 'blog' %}">Enter</a>
+        </div>
+    </header>
 {% endblock %}

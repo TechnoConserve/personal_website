@@ -16,8 +16,8 @@
 
     {# External stylesheets #}
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <link rel="stylesheet" href="{% static 'css/global.css' %}"/>
 
@@ -50,50 +50,66 @@
 
 <body class="{% block body_class %}{% endblock %}"> {# Override this block to set custom body classes on a template by template basis #}
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="{% slugurl 'home' %}">Avery's WebCastle</a>
-            <ul class="nav navbar-nav navbar-left">
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        {# Memory game is a seperate WebStorm project #}
-                        <li><a href="/projects/memory-game">Memory Game</a></li>
-                        {# Bugger is also a seperate WebStorm project #}
-                        <li><a href="/projects/bugger">Bugger</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="{% slugurl 'home' %}">Avery's WebCastle</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="{% slugurl 'photography' %}">Photography</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="projectDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Projects
+                </a>
+                <div class="dropdown-menu" aria-labelledby="projectDropdown">
+                    {# Memory game is a seperate WebStorm project #}
+                    <a class="dropdown-item" href="/projects/memory-game">Memory Game</a>
+                    {# Bugger is also a seperate WebStorm project #}
+                    <a class="dropdown-item" href="/projects/bugger">Bugger</a>
+                </div>
+            </li>
+        </ul>
+
+        <ul class="navbar-nav ml-auto">
             {% if user.is_authenticated %}
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Account <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="{% url 'user_profile' user %}">Profile</a></li>
-                            <li><a href="{% url 'logout' %}">Logout</a></li>
-                        </ul>
-                    </li>
-                </ul>
+
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="accountDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        My Account
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="accountDropdown">
+                        <a href="{% url 'user_profile' user %}">Profile</a>
+                        <a href="{% url 'logout' %}">Logout</a>
+                    </div>
+                </li>
+
             {% else %}
-                <a class="navbar-text navbar-right" href="{% url 'registration_register' %}">Register</a>
-                <form method="POST"
-                      action="{% url 'login' %}?next={% if request.path == '/logout/' %}/{% else %}{{request.path}}{% endif %}"
-                      class="navbar-form navbar-right">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'registration_register' %}">Register</a>
+                </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0" method="POST"
+                      action="{% url 'login' %}?next={% if request.path == '/logout/' %}/{% else %}{{request.path}}{% endif %}">
                     {% csrf_token %}
+
                     <div class="form-group">
-                        <input type="text" name="username" placeholder="Username" id="id_username" class="form-control">
+                        <input type="text" name="username" placeholder="Username" id="id_username"
+                               class="form-control ml-sm-2">
                     </div>
                     <div class="form-group">
                         <input type="password" name="password" placeholder="Password" id="id_password"
-                               class="form-control">
+                               class="form-control ml-sm-2">
                     </div>
-                    <button type="submit" class="btn btn-success">Sign in</button>
+                    <button type="submit" class="btn btn-success ml-2">Sign in</button>
                 </form>
             {% endif %}
-        </div><!--/.navbar-collapse -->
+
+
     </div>
 </nav>
 

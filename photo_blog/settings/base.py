@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'modelcluster',
     'taggit',
     'django_uwsgi',
+    'widget_tweaks',
 
     'home',  # Customize Wagtail
     'blog',

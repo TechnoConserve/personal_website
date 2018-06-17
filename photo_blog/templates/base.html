@@ -98,24 +98,22 @@
                     {% csrf_token %}
 
                     <div class="form-group">
-                        <input type="text" name="username" placeholder="Username" id="id_username"
+                        <input type="text" name="username" placeholder="Username" id="nav_username"
                                class="form-control ml-sm-2">
                     </div>
                     <div class="form-group">
-                        <input type="password" name="password" placeholder="Password" id="id_password"
+                        <input type="password" name="password" placeholder="Password" id="nav_password"
                                class="form-control ml-sm-2">
                     </div>
                     <button type="submit" class="btn btn-success ml-2">Sign in</button>
                 </form>
             {% endif %}
-
-
     </div>
 </nav>
 
 <div class="container mt-5 pt-5">
     <div class="row">
-        <div class="col-3">
+        <div class="col-md-3">
             {% block heading %}
                 <div class="page-header">
                     <h1>{% block heading_text %}{{ self.title }}{% endblock %}</h1>
@@ -124,7 +122,7 @@
             {% endblock %}
         </div>
 
-        <div class="col-9">
+        <div class="col-md-9">
             {% block content %}{% endblock %}
         </div>
 

@@ -1,119 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5daa2f32-aa60-4cce-90a6-f0a4d8f21f6f" name="Default" comment="Project Bugger Addition&#10;&#10;Added another URL to a frogger type web app in the new dropdown menu.">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7cc24812-5fa1-44be-b35c-f73ac1a81582.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7cc24812-5fa1-44be-b35c-f73ac1a81582/storage.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/photo_blog.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+    <list default="true" id="5daa2f32-aa60-4cce-90a6-f0a4d8f21f6f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templatetags/home_extras.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/templatetags/home_extras.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/photo_blog/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/photo_blog/settings/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/photo_blog/settings/production.py" beforeDir="false" afterPath="$PROJECT_DIR$/photo_blog/settings/production.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/photo_blog/static/css/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/photo_blog/static/css/global.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/photo_blog/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/photo_blog/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/css/base.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/css/changelists.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/css/dashboard.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/css/fonts.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/css/forms.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/css/login.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/css/rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/css/widgets.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/fonts/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/fonts/README.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/fonts/Roboto-Bold-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/fonts/Roboto-Light-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/fonts/Roboto-Regular-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/img/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/img/README.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/img/gis/move_vertex_off.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/img/gis/move_vertex_on.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/img/icon-addlink.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/img/icon-clock.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/img/icon-deletelink.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/img/icon-no.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/img/icon-unknown.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/img/sorting-icons.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/img/tooltag-arrowright.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/SelectFilter2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/actions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/actions.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/cancel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/change_form.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/core.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/inlines.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/inlines.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/prepopulate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/prepopulate.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/prepopulate_init.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/timeparse.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/jquery/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/xregexp/xregexp.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/blog/css/blog.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/css/layouts/compare-revisions.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/css/layouts/login.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/css/panels/rich-text.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/css/userbar.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/css/vendor/jquery-ui/images/ui-bg_flat_0_aaaaaa_40x100.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/css/vendor/jquery-ui/images/ui-bg_flat_100_e8f8f9_40x100.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/css/vendor/jquery-ui/images/ui-bg_flat_100_ffffff_40x100.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/css/vendor/jquery-ui/images/ui-bg_flat_65_49c0c1_40x100.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/css/vendor/tagit.ui-zendesk.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/opensans-bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/opensans-bold.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/opensans-bolditalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/opensans-italic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/opensans-italic.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/opensans-lightitalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/opensans-lightitalic.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/opensans-regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/opensans-regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/opensans-semibold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/opensans-semibold.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/opensans-semibolditalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/robotoslab-bold.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/robotoslab-bold.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/robotoslab-regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/robotoslab-regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/fonts/wagtail-icomoon.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/images/bg-dark-diag.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/images/email-header.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/images/logo-body.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/images/logo-eyeclosed.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/images/logo-eyeopen.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/images/logo-tail.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/js/blocks/list.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/js/blocks/sequence.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/js/blocks/stream.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/js/blocks/struct.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/js/expanding_formset.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/js/hallo-plugins/hallo-hr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/js/hallo-plugins/hallo-requireparagraphs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/js/hallo-plugins/hallo-wagtaillink.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/js/page-chooser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/js/page-editor.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/js/privacy-switch.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/js/submenu.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/js/upgrade_notify.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/js/vendor/bootstrap-modal.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/js/vendor/hallo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/js/vendor/jquery-ui-1.10.3.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/js/vendor/jquery.ba-throttle-debounce.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/js/vendor/jquery.datetimepicker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/js/vendor/modernizr-2.6.2.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/wagtailadmin/js/wagtailadmin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/wagtaildocs/js/add-multiple.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/wagtaildocs/js/document-chooser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/wagtailembeds/js/hallo-plugins/hallo-wagtailembeds.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/wagtailimages/js/add-multiple.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/wagtailimages/js/focal-point-chooser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/wagtailimages/js/image-chooser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/wagtailimages/js/vendor/canvas-to-blob.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/wagtailimages/js/vendor/load-image.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/wagtailsnippets/js/snippet-chooser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/wagtailusers/css/groups_edit.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/wagtailusers/js/group-form.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/photo_blog/templates/registration/registration_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/photo_blog/templates/registration/registration_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/shelf/" />
     <ignored mask="*.pem" />
@@ -157,20 +53,65 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="home_page.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/home/templates/home/home_page.html">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/photo_blog/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+            <state relative-caret-position="288">
+              <caret line="124" column="26" selection-start-line="124" selection-start-column="26" selection-end-line="124" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/photo_blog/templates/base.html">
+      <file leaf-file-name="global.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/photo_blog/static/css/global.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="557">
-              <caret line="101" column="50" selection-start-line="101" selection-start-column="50" selection-end-line="101" selection-end-column="50" />
+            <state relative-caret-position="51">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="registration_form.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/photo_blog/templates/registration/registration_form.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home_extras.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/home/templatetags/home_extras.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/photo_blog/settings/base.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="527">
+              <caret line="52" column="20" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="production.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/photo_blog/settings/production.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dev.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/photo_blog/settings/dev.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
@@ -206,6 +147,8 @@
       <find>img</find>
       <find>static</find>
       <find>projects/</find>
+      <find>forms</find>
+      <find>registration</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
@@ -229,8 +172,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/blog/blocks/heading.html" />
-        <option value="$PROJECT_DIR$/blog/blocks/code.html" />
         <option value="$PROJECT_DIR$/blog/migrations/0008_auto_20170116_2029.py" />
         <option value="$PROJECT_DIR$/templates/blocks/heading.html" />
         <option value="$PROJECT_DIR$/templates/blocks/code.html" />
@@ -241,7 +182,6 @@
         <option value="$PROJECT_DIR$/blog/admin.py" />
         <option value="$PROJECT_DIR$/photo_blog/settings.py" />
         <option value="$PROJECT_DIR$/photo_blog/base.py" />
-        <option value="$PROJECT_DIR$/photo_blog/settings/production.py" />
         <option value="$USER_HOME$/.profile" />
         <option value="$PROJECT_DIR$/static/admin/css/base.css" />
         <option value="$PROJECT_DIR$/photo_blog/templates/registration/activate.html" />
@@ -263,23 +203,26 @@
         <option value="$PROJECT_DIR$/blog/templates/blog/blog_page.html" />
         <option value="$PROJECT_DIR$/blog/static/blog/css/blog.css" />
         <option value="$PROJECT_DIR$/custom_user/models.py" />
-        <option value="$PROJECT_DIR$/photo_blog/templates/registration/registration_form.html" />
         <option value="$PROJECT_DIR$/blog/urls.py" />
         <option value="$PROJECT_DIR$/blog/templates/blog/tags/archive_list.html" />
         <option value="$PROJECT_DIR$/custom_user/views.py" />
         <option value="$PROJECT_DIR$/blog/routes.py" />
         <option value="$PROJECT_DIR$/custom_user/templates/accounts/user_profile.html" />
         <option value="$PROJECT_DIR$/blog/templates/blog/tags/post_list.html" />
-        <option value="$PROJECT_DIR$/photo_blog/static/css/global.css" />
         <option value="$PROJECT_DIR$/blog/templates/blog/blog_index_page.html" />
         <option value="$PROJECT_DIR$/custom_user/admin.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/photo_blog/settings/base.py" />
         <option value="$PROJECT_DIR$/home/static/home/landing.css" />
         <option value="$PROJECT_DIR$/home/static/home/css/landing.css" />
         <option value="$PROJECT_DIR$/home/templates/home/home_page.html" />
         <option value="$PROJECT_DIR$/photo_blog/urls.py" />
+        <option value="$PROJECT_DIR$/photo_blog/settings/production.py" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/home/templatetags/home_extras.py" />
+        <option value="$PROJECT_DIR$/photo_blog/settings/base.py" />
+        <option value="$PROJECT_DIR$/photo_blog/templates/registration/registration_form.html" />
         <option value="$PROJECT_DIR$/photo_blog/templates/base.html" />
+        <option value="$PROJECT_DIR$/photo_blog/static/css/global.css" />
       </list>
     </option>
   </component>
@@ -293,9 +236,9 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="851" />
+    <option name="x" value="845" />
     <option name="y" value="27" />
-    <option name="width" value="1272" />
+    <option name="width" value="1075" />
     <option name="height" value="1013" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -314,13 +257,44 @@
             <path>
               <item name="averyuslaner.com" type="b2602c69:ProjectViewProjectNode" />
               <item name="averyuslaner.com" type="462c0819:PsiDirectoryNode" />
+              <item name="custom_user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="averyuslaner.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="averyuslaner.com" type="462c0819:PsiDirectoryNode" />
               <item name="photo_blog" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="averyuslaner.com" type="b2602c69:ProjectViewProjectNode" />
               <item name="averyuslaner.com" type="462c0819:PsiDirectoryNode" />
               <item name="photo_blog" type="462c0819:PsiDirectoryNode" />
+              <item name="settings" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="averyuslaner.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="averyuslaner.com" type="462c0819:PsiDirectoryNode" />
+              <item name="photo_blog" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="averyuslaner.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="averyuslaner.com" type="462c0819:PsiDirectoryNode" />
+              <item name="photo_blog" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="averyuslaner.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="averyuslaner.com" type="462c0819:PsiDirectoryNode" />
+              <item name="photo_blog" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="averyuslaner.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="averyuslaner.com" type="462c0819:PsiDirectoryNode" />
+              <item name="photo_blog" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="registration" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -339,7 +313,7 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="prop_add_unversioned_files" value="true" />
-    <property name="settings.editor.selected.configurable" value="vcs.Mercurial" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -350,17 +324,17 @@
     </option>
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/photo_blog/static/img" />
-      <recent name="$PROJECT_DIR$/custom_user/templates/accounts" />
-      <recent name="$PROJECT_DIR$/home" />
-      <recent name="$PROJECT_DIR$/photo_blog/templates" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/home/static/home/css" />
       <recent name="$PROJECT_DIR$/home/static/home" />
       <recent name="$PROJECT_DIR$/photo_blog/static/img" />
       <recent name="$PROJECT_DIR$/blog/templates/blog/tags" />
+      <recent name="$PROJECT_DIR$/photo_blog/templates" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/photo_blog/static/img" />
+      <recent name="$PROJECT_DIR$/custom_user/templates/accounts" />
+      <recent name="$PROJECT_DIR$/home" />
       <recent name="$PROJECT_DIR$/photo_blog/templates" />
     </key>
   </component>
@@ -650,20 +624,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1482365092750</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Actually, I did want an author so I added it.">
-      <created>1483398344073</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1483398344073</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Added support for Disqus comments.">
-      <created>1483400754394</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1483400754394</updated>
     </task>
     <task id="LOCAL-00021" summary="Converted blog model to use SteamField for body. Added code blocks. Improved css of blog pages.">
       <created>1484642288282</created>
@@ -994,11 +954,25 @@
       <option name="project" value="LOCAL" />
       <updated>1528838825095</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="Updated Navbar with Bootstrap 4.0">
+      <created>1529186407073</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1529186407074</updated>
+    </task>
+    <task id="LOCAL-00069" summary="Added Bootstrap JS CDN &amp; Base Content Style&#10;&#10;Updated JS CDN for bootstrap 4.0 and added basic content organizational&#10;classes for the base template page.">
+      <created>1529187359875</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1529187359875</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="851" y="27" width="1272" height="1013" extended-state="0" />
+    <frame x="845" y="27" width="1075" height="1013" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="9" />
@@ -1006,11 +980,12 @@
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.4969605" weight="0.59096044" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32881355" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.4941302" weight="0.53690034" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.4941302" weight="0.5368899" />
       <window_info anchor="bottom" id="Terminal" order="16" sideWeight="0.49354145" weight="0.14915255" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.18433931" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18367347" />
       <window_info anchor="bottom" id="Docker" order="19" weight="0.32932165" />
       <window_info anchor="right" id="Database" order="3" weight="0.32992464" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32822758" />
       <window_info anchor="right" id="SciView" order="4" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -1022,7 +997,6 @@
       <window_info anchor="right" id="Data View" order="4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32822758" />
       <window_info anchor="bottom" id="manage.py@photo_blog" order="17" weight="0.32881355" />
     </layout>
     <layout-to-restore>
@@ -1083,8 +1057,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="true" />
-    <MESSAGE value="Removed user attribute from the instances which were already user objects." />
-    <MESSAGE value="Hooked up navbar login form and added relevant account links." />
     <MESSAGE value="Added missing div tag." />
     <MESSAGE value="Modified BlogIndexPage wagtail model to allow for an about field." />
     <MESSAGE value="Rework of BlogIndexPage to allow for listing archive of posts by time." />
@@ -1108,7 +1080,9 @@
     <MESSAGE value="Disabled Google Banner Ad On Landing Page" />
     <MESSAGE value="Project Nav&#10;&#10;Added a topbar nav addition for other web projects. Added a URL to a&#10;memory game web app in the new dropdown menu." />
     <MESSAGE value="Project Bugger Addition&#10;&#10;Added another URL to a frogger type web app in the new dropdown menu." />
-    <option name="LAST_COMMIT_MESSAGE" value="Project Bugger Addition&#10;&#10;Added another URL to a frogger type web app in the new dropdown menu." />
+    <MESSAGE value="Updated Navbar with Bootstrap 4.0" />
+    <MESSAGE value="Added Bootstrap JS CDN &amp; Base Content Style&#10;&#10;Updated JS CDN for bootstrap 4.0 and added basic content organizational&#10;classes for the base template page." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Bootstrap JS CDN &amp; Base Content Style&#10;&#10;Updated JS CDN for bootstrap 4.0 and added basic content organizational&#10;classes for the base template page." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1116,20 +1090,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/photo_blog/settings/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="172" selection-start-line="172" selection-end-line="172" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/static/blog/css/blog.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="107" selection-start-line="107" selection-end-line="107" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/home/static/home/css/landing.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
@@ -1293,13 +1253,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/photo_blog/templates/registration/registration_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog/templatetags/blog_tags.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -1318,18 +1271,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom_user/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="e#0#14#0" />
-            <marker date="1517519721540" expanded="true" signature="1040:1046" ph="..." />
-            <marker date="1517519721540" expanded="true" signature="1040:1048" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1368,24 +1309,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/photo_blog/settings/production.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="54" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="534">
-          <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -1417,20 +1344,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/photo_blog/settings/dev.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/photo_blog/settings/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="172" selection-start-line="172" selection-end-line="172" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog/static/blog/css/blog.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -1459,10 +1372,69 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/custom_user/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <marker date="1517519721540" expanded="true" signature="1040:1046" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photo_blog/settings/dev.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photo_blog/settings/production.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/templatetags/home_extras.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photo_blog/settings/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="52" column="20" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photo_blog/templates/registration/registration_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/photo_blog/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="557">
-          <caret line="101" column="50" selection-start-line="101" selection-start-column="50" selection-end-line="101" selection-end-column="50" />
+        <state relative-caret-position="288">
+          <caret line="124" column="26" selection-start-line="124" selection-start-column="26" selection-end-line="124" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photo_blog/static/css/global.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>

@@ -1,6 +1,7 @@
 import datetime
 
 from django.db import models
+from django.utils import timezone
 
 from modelcluster.contrib.taggit import ClusterTaggableManager
 from modelcluster.fields import ParentalKey
@@ -108,7 +109,7 @@ BLOCK_TYPES = [
 
 class BlogPage(Page):
     date = models.DateTimeField(
-        'Post date', default=datetime.datetime.today,
+        'Post date', default=timezone.now,
         help_text=("This date is displayed on the blog post. It is not used "
                    "to schedule posts to go live at a later date.")
     )

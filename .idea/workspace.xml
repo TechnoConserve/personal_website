@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5daa2f32-aa60-4cce-90a6-f0a4d8f21f6f" name="Default" comment="Starting PyTesting&#10;&#10;Setup PyTest for django and added a test">
-      <change afterPath="$PROJECT_DIR$/pytest.ini" afterDir="false" />
+    <list default="true" id="5daa2f32-aa60-4cce-90a6-f0a4d8f21f6f" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/blog/migrations/0007_auto_20180617_2036.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom_user/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom_user/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/shelf/" />
     <ignored mask="*.pem" />
@@ -17,7 +19,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/averyuslaner_com$PyTesting.coverage" NAME="PyTesting Coverage Results" MODIFIED="1529288278529" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/averyuslaner_com$PyTesting.coverage" NAME="PyTesting Coverage Results" MODIFIED="1529292273453" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -64,12 +66,12 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="tests.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/custom_user/tests.py">
+        <entry file="file://$PROJECT_DIR$/blog/tests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="408">
+              <caret line="24" column="88" selection-start-line="24" selection-start-column="88" selection-end-line="24" selection-end-column="88" />
               <folding>
-                <element signature="e#0#13#0" expanded="true" />
+                <element signature="e#0#46#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -78,7 +80,7 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/custom_user/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1105">
+            <state relative-caret-position="503">
               <caret line="65" column="66" selection-start-line="65" selection-start-column="66" selection-end-line="65" selection-end-column="66" />
               <folding>
                 <element signature="e#0#68#0" expanded="true" />
@@ -90,29 +92,11 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-578">
-              <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/custom_user/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="918">
+              <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
               <folding>
-                <marker date="1517519721540" expanded="true" signature="1040:1046" ph="..." />
+                <element signature="e#0#15#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/photo_blog/settings/base.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="104" column="28" lean-forward="true" selection-start-line="104" selection-start-column="28" selection-end-line="104" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -149,6 +133,8 @@
       <find>static</find>
       <find>projects/</find>
       <find>registration</find>
+      <find>wagtailcore.Page</find>
+      <find>search_description</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
@@ -197,7 +183,6 @@
         <option value="$PROJECT_DIR$/blog/templatetags/__init__.py" />
         <option value="$PROJECT_DIR$/blog/utils.py" />
         <option value="$PROJECT_DIR$/blog/views.py" />
-        <option value="$PROJECT_DIR$/blog/models.py" />
         <option value="$PROJECT_DIR$/blog/templatetags/blog_tags.py" />
         <option value="$PROJECT_DIR$/blog/templates/blog/blog_page.html" />
         <option value="$PROJECT_DIR$/blog/static/blog/css/blog.css" />
@@ -212,7 +197,6 @@
         <option value="$PROJECT_DIR$/photo_blog/static/css/global.css" />
         <option value="$PROJECT_DIR$/blog/templates/blog/blog_index_page.html" />
         <option value="$PROJECT_DIR$/custom_user/admin.py" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/photo_blog/settings/base.py" />
         <option value="$PROJECT_DIR$/home/static/home/landing.css" />
         <option value="$PROJECT_DIR$/home/static/home/css/landing.css" />
@@ -221,8 +205,10 @@
         <option value="$PROJECT_DIR$/photo_blog/templates/base.html" />
         <option value="$PROJECT_DIR$/photo_blog/settings/production.py" />
         <option value="$PROJECT_DIR$/pytest.ini" />
-        <option value="$PROJECT_DIR$/blog/tests.py" />
         <option value="$PROJECT_DIR$/custom_user/tests.py" />
+        <option value="$PROJECT_DIR$/blog/models.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/blog/tests.py" />
       </list>
     </option>
   </component>
@@ -307,7 +293,7 @@
     <property name="add_unversioned_files" value="true" />
     <property name="js-jscs-nodeInterpreter" value="$USER_HOME$/Downloads/nodejs/node-v6.9.1-linux-x64/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/blog/fixtures" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="prop_add_unversioned_files" value="true" />
@@ -332,11 +318,11 @@
       <recent name="$PROJECT_DIR$/photo_blog/templates" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/blog/fixtures" />
       <recent name="$PROJECT_DIR$/home/static/home/css" />
       <recent name="$PROJECT_DIR$/home/static/home" />
       <recent name="$PROJECT_DIR$/photo_blog/static/img" />
       <recent name="$PROJECT_DIR$/blog/templates/blog/tags" />
-      <recent name="$PROJECT_DIR$/photo_blog/templates" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -651,13 +637,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1482365092750</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Actually, I did want an author so I added it.">
-      <created>1483398344073</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1483398344073</updated>
     </task>
     <task id="LOCAL-00020" summary="Added support for Disqus comments.">
       <created>1483400754394</created>
@@ -995,104 +974,92 @@
       <option name="project" value="LOCAL" />
       <updated>1528838825095</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="Starting PyTesting&#10;&#10;Setup PyTest for django and added a basic test to ensure created custom&#10;user objects exist.">
+      <created>1529288458787</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1529288458787</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PyTesting - 2018.06.17 at 18h 53m 52s.xml">
+    <history-entry file="PyTesting - 2018.06.17 at 20h 28m 45s.xml">
       <configuration name="PyTesting" configurationId="tests" />
     </history-entry>
-    <history-entry file="PyTesting - 2018.06.17 at 18h 55m 34s.xml">
+    <history-entry file="PyTesting - 2018.06.17 at 20h 37m 12s.xml">
       <configuration name="PyTesting" configurationId="tests" />
     </history-entry>
-    <history-entry file="PyTesting - 2018.06.17 at 19h 31m 55s.xml">
+    <history-entry file="PyTesting - 2018.06.17 at 20h 52m 44s.xml">
       <configuration name="PyTesting" configurationId="tests" />
     </history-entry>
-    <history-entry file="PyTesting - 2018.06.17 at 19h 33m 33s.xml">
+    <history-entry file="PyTesting - 2018.06.17 at 20h 54m 31s.xml">
       <configuration name="PyTesting" configurationId="tests" />
     </history-entry>
-    <history-entry file="PyTesting - 2018.06.17 at 19h 46m 42s.xml">
+    <history-entry file="PyTesting - 2018.06.17 at 20h 57m 39s.xml">
       <configuration name="PyTesting" configurationId="tests" />
     </history-entry>
-    <history-entry file="PyTesting - 2018.06.17 at 19h 48m 21s.xml">
+    <history-entry file="PyTesting - 2018.06.17 at 21h 19m 17s.xml">
       <configuration name="PyTesting" configurationId="tests" />
     </history-entry>
-    <history-entry file="PyTesting - 2018.06.17 at 19h 49m 34s.xml">
+    <history-entry file="PyTesting - 2018.06.17 at 21h 20m 09s.xml">
       <configuration name="PyTesting" configurationId="tests" />
     </history-entry>
-    <history-entry file="PyTesting - 2018.06.17 at 20h 08m 13s.xml">
+    <history-entry file="PyTesting - 2018.06.17 at 21h 22m 45s.xml">
       <configuration name="PyTesting" configurationId="tests" />
     </history-entry>
-    <history-entry file="PyTesting - 2018.06.17 at 20h 12m 31s.xml">
+    <history-entry file="PyTesting - 2018.06.17 at 21h 23m 50s.xml">
       <configuration name="PyTesting" configurationId="tests" />
     </history-entry>
-    <history-entry file="PyTesting - 2018.06.17 at 20h 18m 11s.xml">
+    <history-entry file="PyTesting - 2018.06.17 at 21h 24m 47s.xml">
       <configuration name="PyTesting" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1017" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info anchor="bottom" id="TODO" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5058698" side_tool="true" weight="0.32881355" />
-      <window_info anchor="bottom" id="Database Changes" order="11" />
+      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5058698" side_tool="true" weight="0.32881355" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.4969605" weight="0.59096044" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32881355" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.4941302" visible="true" weight="0.5355932" />
-      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.32977587" />
-      <window_info anchor="bottom" id="Terminal" order="16" sideWeight="0.49354145" weight="0.6485876" />
+      <window_info anchor="bottom" id="Python Console" order="9" weight="0.32881355" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4941302" weight="0.5355932" />
+      <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.32977587" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49354145" weight="0.6485876" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.100853786" />
-      <window_info anchor="bottom" id="manage.py@photo_blog" order="17" weight="0.32881355" />
-      <window_info anchor="bottom" id="Docker" order="19" weight="0.32932165" />
-      <window_info anchor="right" id="Database" order="3" weight="0.32977587" />
+      <window_info anchor="bottom" id="manage.py@photo_blog" order="12" weight="0.32881355" />
+      <window_info anchor="bottom" id="Docker" order="13" weight="0.32932165" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32977587" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32822758" />
-      <window_info anchor="right" id="SciView" order="4" />
+      <window_info anchor="right" id="SciView" order="5" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Debug" order="5" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="19" weight="0.32932165" />
-      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11953042" />
-      <window_info anchor="right" id="SciView" order="4" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="9" />
-      <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.4969605" weight="0.59096044" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.4941302" visible="true" weight="0.32881355" />
-      <window_info anchor="right" id="Data View" order="4" />
-      <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" weight="0.32992464" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5058698" side_tool="true" weight="0.32881355" />
-      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32822758" />
-      <window_info anchor="bottom" id="Terminal" order="16" sideWeight="0.49354145" weight="0.14915255" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32881355" />
-    </layout>
-    <layout-to-restore>
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18622175" />
-      <window_info id="Structure" order="1" weight="0.25" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.4969605" weight="0.5924453" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32888147" />
-      <window_info anchor="right" id="Database" order="3" weight="0.32992464" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49354145" visible="true" weight="0.28827038" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5064586" side_tool="true" weight="0.28827038" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="6" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="23" weight="0.32932165" />
+      <window_info anchor="bottom" id="Inspection" order="16" weight="0.4" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11953042" />
+      <window_info anchor="right" id="SciView" order="7" />
+      <window_info anchor="right" id="Commander" order="1" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="17" />
+      <window_info anchor="bottom" id="Version Control" order="21" sideWeight="0.4969605" weight="0.59096044" />
+      <window_info active="true" anchor="bottom" id="Run" order="5" sideWeight="0.4941302" visible="true" weight="0.32881355" />
+      <window_info anchor="right" id="Data View" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="19" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Database" order="6" weight="0.32992464" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Python Console" order="8" />
-    </layout-to-restore>
+      <window_info anchor="bottom" id="Event Log" order="18" sideWeight="0.5058698" side_tool="true" weight="0.32881355" />
+      <window_info anchor="bottom" id="Cvs" order="15" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="4" weight="0.32822758" />
+      <window_info anchor="bottom" id="Terminal" order="22" sideWeight="0.49354145" weight="0.14915255" />
+      <window_info anchor="bottom" id="Python Console" order="20" weight="0.32881355" />
+    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -1131,7 +1098,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="true" />
-    <MESSAGE value="Removed user attribute from the instances which were already user objects." />
     <MESSAGE value="Hooked up navbar login form and added relevant account links." />
     <MESSAGE value="Added missing div tag." />
     <MESSAGE value="Modified BlogIndexPage wagtail model to allow for an about field." />
@@ -1156,7 +1122,8 @@
     <MESSAGE value="Disabled Google Banner Ad On Landing Page" />
     <MESSAGE value="Project Nav&#10;&#10;Added a topbar nav addition for other web projects. Added a URL to a&#10;memory game web app in the new dropdown menu." />
     <MESSAGE value="Project Bugger Addition&#10;&#10;Added another URL to a frogger type web app in the new dropdown menu." />
-    <option name="LAST_COMMIT_MESSAGE" value="Project Bugger Addition&#10;&#10;Added another URL to a frogger type web app in the new dropdown menu." />
+    <MESSAGE value="Starting PyTesting&#10;&#10;Setup PyTest for django and added a basic test to ensure created custom&#10;user objects exist." />
+    <option name="LAST_COMMIT_MESSAGE" value="Starting PyTesting&#10;&#10;Setup PyTest for django and added a basic test to ensure created custom&#10;user objects exist." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1164,13 +1131,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/home/templates/home/home_page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/photo_blog/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1037">
@@ -1292,13 +1252,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog/templatetags/blog_tags.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -1369,13 +1322,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="503">
-          <caret line="91" column="12" lean-forward="true" selection-start-line="91" selection-start-column="12" selection-end-line="91" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog/static/blog/css/blog.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -1439,44 +1385,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog/apps.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="17" column="51" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-578">
-          <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pytest.ini">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="44" selection-start-line="1" selection-start-column="44" selection-end-line="1" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom_user/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1105">
-          <caret line="65" column="66" selection-start-line="65" selection-start-column="66" selection-end-line="65" selection-end-column="66" />
-          <folding>
-            <element signature="e#0#68#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1487,16 +1399,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/custom_user/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <marker date="1517519721540" expanded="true" signature="1040:1046" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/photo_blog/settings/base.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -1504,12 +1406,83 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/custom_user/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <marker date="1517519721540" expanded="true" signature="1040:1046" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="17" column="51" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/apps.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/fixtures/testdata.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret column="61074" selection-start-column="61058" selection-end-column="61074" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="105" column="11" selection-start-line="105" selection-start-column="11" selection-end-line="105" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/custom_user/tests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="204">
+          <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom_user/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="503">
+          <caret line="65" column="66" selection-start-line="65" selection-start-column="66" selection-end-line="65" selection-end-column="66" />
+          <folding>
+            <element signature="e#0#68#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="88" selection-start-line="24" selection-start-column="88" selection-end-line="24" selection-end-column="88" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
           </folding>
         </state>
       </provider>

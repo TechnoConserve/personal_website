@@ -1,4 +1,4 @@
-from django.core.urlresolvers import reverse
+from django.shortcuts import reverse
 
 
 def strip_prefix_and_ending_slash(path):

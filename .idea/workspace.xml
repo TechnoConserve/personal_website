@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5daa2f32-aa60-4cce-90a6-f0a4d8f21f6f" name="Default" comment="Wagtail and Django Upgrades&#10;&#10;Various changes to satisfy changes required for the upgrades to Wagtail &#10;and Django.&#10;&#10;Updated main urls file to use path rather than url function. Blog urls &#10;file was updated to use the re_path function so as to preserve existing &#10;regex functionality.&#10;&#10;Updated imports for django_registration and django functions such &#10;as reverse.&#10;&#10;Added file logging to the production settings file to aid with debugging&#10;.&#10;&#10;Updated requirements file to reflect current package environment.">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7cc24812-5fa1-44be-b35c-f73ac1a81582.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7cc24812-5fa1-44be-b35c-f73ac1a81582.xml" afterDir="false" />
+    <list default="true" id="5daa2f32-aa60-4cce-90a6-f0a4d8f21f6f" name="Default" comment="Django Upgrade&#10;&#10;Upgraded Django to 2.2.3 to address a security issue.">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/photo_blog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/photo_blog.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/migrations/0004_auto_20170914_2003.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/migrations/0004_auto_20170914_2003.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/migrations/0006_auto_20180103_1143.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/migrations/0006_auto_20180103_1143.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/routes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/photo_blog/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/photo_blog/settings/base.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,32 +65,6 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>footer</find>
-      <find>d</find>
-      <find>mysql</find>
-      <find>template</find>
-      <find>heading.html</find>
-      <find>import User</find>
-      <find>User</find>
-      <find>Python</find>
-      <find>next</find>
-      <find>meta</find>
-      <find>get_entry_url</find>
-      <find>entries_by_date</find>
-      <find>div</find>
-      <find>icon</find>
-      <find>head</find>
-      <find>img</find>
-      <find>static</find>
-      <find>projects/</find>
-      <find>path</find>
-    </findStrings>
-    <dirStrings>
-      <dir>$PROJECT_DIR$</dir>
-    </dirStrings>
-  </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
@@ -108,10 +92,14 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../beecam" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="prop_add_unversioned_files" value="true" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -244,14 +232,7 @@
       <workItem from="1560722585482" duration="8130000" />
       <workItem from="1560736234784" duration="2338000" />
       <workItem from="1561414331052" duration="30000" />
-      <workItem from="1563999989661" duration="866000" />
-    </task>
-    <task id="LOCAL-00020" summary="Added support for Disqus comments.">
-      <created>1483400754394</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1483400754394</updated>
+      <workItem from="1563999989661" duration="5690000" />
     </task>
     <task id="LOCAL-00021" summary="Converted blog model to use SteamField for body. Added code blocks. Improved css of blog pages.">
       <created>1484642288282</created>
@@ -589,7 +570,14 @@
       <option name="project" value="LOCAL" />
       <updated>1561334483700</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="Django Upgrade&#10;&#10;Upgraded Django to 2.2.3 to address a security issue.">
+      <created>1564001019151</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1564001019152</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -627,7 +615,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="true" />
-    <MESSAGE value="Hooked up navbar login form and added relevant account links." />
     <MESSAGE value="Added missing div tag." />
     <MESSAGE value="Modified BlogIndexPage wagtail model to allow for an about field." />
     <MESSAGE value="Rework of BlogIndexPage to allow for listing archive of posts by time." />
@@ -652,6 +639,7 @@
     <MESSAGE value="Project Nav&#10;&#10;Added a topbar nav addition for other web projects. Added a URL to a&#10;memory game web app in the new dropdown menu." />
     <MESSAGE value="Project Bugger Addition&#10;&#10;Added another URL to a frogger type web app in the new dropdown menu." />
     <MESSAGE value="Wagtail and Django Upgrades&#10;&#10;Various changes to satisfy changes required for the upgrades to Wagtail &#10;and Django.&#10;&#10;Updated main urls file to use path rather than url function. Blog urls &#10;file was updated to use the re_path function so as to preserve existing &#10;regex functionality.&#10;&#10;Updated imports for django_registration and django functions such &#10;as reverse.&#10;&#10;Added file logging to the production settings file to aid with debugging&#10;.&#10;&#10;Updated requirements file to reflect current package environment." />
-    <option name="LAST_COMMIT_MESSAGE" value="Wagtail and Django Upgrades&#10;&#10;Various changes to satisfy changes required for the upgrades to Wagtail &#10;and Django.&#10;&#10;Updated main urls file to use path rather than url function. Blog urls &#10;file was updated to use the re_path function so as to preserve existing &#10;regex functionality.&#10;&#10;Updated imports for django_registration and django functions such &#10;as reverse.&#10;&#10;Added file logging to the production settings file to aid with debugging&#10;.&#10;&#10;Updated requirements file to reflect current package environment." />
+    <MESSAGE value="Django Upgrade&#10;&#10;Upgraded Django to 2.2.3 to address a security issue." />
+    <option name="LAST_COMMIT_MESSAGE" value="Django Upgrade&#10;&#10;Upgraded Django to 2.2.3 to address a security issue." />
   </component>
 </project>

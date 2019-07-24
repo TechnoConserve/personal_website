@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5daa2f32-aa60-4cce-90a6-f0a4d8f21f6f" name="Default" comment="Django Upgrade&#10;&#10;Upgraded Django to 2.2.3 to address a security issue.">
-      <change afterPath="$PROJECT_DIR$/blog/migrations/0007_tag.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/migrations/0004_auto_20170914_2003.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/migrations/0004_auto_20170914_2003.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/migrations/0006_auto_20180103_1143.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/migrations/0006_auto_20180103_1143.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/routes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/migrations/0001_initial.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/photo_blog/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/photo_blog/settings/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -231,21 +222,7 @@
       <workItem from="1560722585482" duration="8130000" />
       <workItem from="1560736234784" duration="2338000" />
       <workItem from="1561414331052" duration="30000" />
-      <workItem from="1563999989661" duration="11126000" />
-    </task>
-    <task id="LOCAL-00023" summary="GitHub creds.">
-      <created>1484706225874</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1484706225874</updated>
-    </task>
-    <task id="LOCAL-00024" summary="Removed authentication app.">
-      <created>1484706678609</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1484706678609</updated>
+      <workItem from="1563999989661" duration="11375000" />
     </task>
     <task id="LOCAL-00025" summary="Custom user model added that simply extends default wagtail user model. Dropped and rebuilt database.">
       <created>1484710074390</created>
@@ -576,7 +553,21 @@
       <option name="project" value="LOCAL" />
       <updated>1564011603414</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="Blog Wagtail Import Refactoring and Tag Improvements&#10;&#10;Updated Wagtail import names to account for changes made by Wagtail&#10;2.x upgrade.&#10;&#10;Registered tags as a Wagtail snippet.&#10;&#10;Specified tag deletion to cascade.">
+      <created>1564011797151</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1564011797151</updated>
+    </task>
+    <task id="LOCAL-00073" summary="Wagtail Base Config Name Updates&#10;&#10;Updated Wagtail import names in base config file to account for changes&#10;made by Wagtail 2.x upgrade.">
+      <created>1564011853520</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1564011853520</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -614,8 +605,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="true" />
-    <MESSAGE value="Rework of BlogIndexPage to allow for listing archive of posts by time." />
-    <MESSAGE value="Added links to social media pages." />
     <MESSAGE value="Added template tag for displaying posts. Altered routing and model attributes to simplify post filtering." />
     <MESSAGE value="Fixed number system in post archive list." />
     <MESSAGE value="Modified __unicode__ method of CustomUser to return full names of users when available." />
@@ -639,7 +628,9 @@
     <MESSAGE value="Django Upgrade&#10;&#10;Upgraded Django to 2.2.3 to address a security issue." />
     <MESSAGE value="Various Library Upgrades&#10;&#10;Upgraded all remaining packages to their latest versions." />
     <MESSAGE value="Wagtail Compatibility Downgrades&#10;&#10;Downgraded beautifulsoup4, django-taggit, and Pillow to address&#10;compatibility issues with the latest version of Wagtail." />
-    <option name="LAST_COMMIT_MESSAGE" value="Wagtail Compatibility Downgrades&#10;&#10;Downgraded beautifulsoup4, django-taggit, and Pillow to address&#10;compatibility issues with the latest version of Wagtail." />
+    <MESSAGE value="Blog Wagtail Import Refactoring and Tag Improvements&#10;&#10;Updated Wagtail import names to account for changes made by Wagtail&#10;2.x upgrade.&#10;&#10;Registered tags as a Wagtail snippet.&#10;&#10;Specified tag deletion to cascade." />
+    <MESSAGE value="Wagtail Base Config Name Updates&#10;&#10;Updated Wagtail import names in base config file to account for changes&#10;made by Wagtail 2.x upgrade." />
+    <option name="LAST_COMMIT_MESSAGE" value="Wagtail Base Config Name Updates&#10;&#10;Updated Wagtail import names in base config file to account for changes&#10;made by Wagtail 2.x upgrade." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

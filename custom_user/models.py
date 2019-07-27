@@ -1,9 +1,10 @@
 from django.contrib.auth.models import AbstractUser, BaseUserManager
 from django.db import models
+from django.utils.translation import ugettext_lazy as _
 
 
 class CustomUserManager(BaseUserManager):
-    def create_user(self, email, first_name, last_name, password, **kwargs):
+    def create_user(self, email, first_name, password, **kwargs):
         if not email:
             raise ValueError('Users must have a valid email address.')
 
@@ -13,24 +14,24 @@ class CustomUserManager(BaseUserManager):
         if not kwargs.get('username'):
             raise ValueError('Users must have a valid username.')
 
-        user = self.model(
-            email=self.normalize_email(email), username=kwargs.get('username'),
-            first_name=first_name, last_name=last_name,
-        )
+        user = self.model(email=self.normalize_email(email), first_name=first_name, **kwargs)
 
         user.set_password(password)
         user.save()
 
         return user
 
-    def create_superuser(self, email, first_name, last_name, password, **kwargs):
-        user = self.create_user(email, first_name, last_name, password, **kwargs)
+    def create_superuser(self, email, first_name, password, **kwargs):
+        kwargs.setdefault('is_staff', True)
+        kwargs.setdefault('is_superuser', True)
+        kwargs.setdefault('is_active', True)
 
-        user.is_superuser = True
-        user.is_staff = True
-        user.save()
+        if kwargs.get('is_staff') is not True:
+            raise ValueError(_('Superuser must set is_staff=True.'))
+        if kwargs.get('is_superuser') is not True:
+            raise ValueError(_('Superuser must set is_superuser=True.'))
 
-        return user
+        return self.create_user(self.normalize_email(email), first_name, password, **kwargs)
 
 
 class CustomUser(AbstractUser):
@@ -38,9 +39,9 @@ class CustomUser(AbstractUser):
     username = models.CharField(max_length=40, unique=True)
 
     first_name = models.CharField(max_length=40)
-    last_name = models.CharField(max_length=40)
+    last_name = models.CharField(max_length=40, null=True)
 
-    is_active = models.BooleanField(default=False)
+    is_active = models.BooleanField(default=True)
     is_staff = models.BooleanField(default=False)
     is_superuser = models.BooleanField(default=False)
 

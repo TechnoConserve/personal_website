@@ -14,6 +14,15 @@
   </component>
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/blog" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/custom_user" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/home" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/media" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/photo_blog" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/static" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/.idea" />
+      <excludeFolder url="file://$MODULE_DIR$/.pytest_cache" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.6 (averyuslaner.com)" jdkType="Python SDK" />

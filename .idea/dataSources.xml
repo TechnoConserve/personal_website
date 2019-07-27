@@ -2,7 +2,7 @@
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
     <data-source source="LOCAL" name="Django default" uuid="7cc24812-5fa1-44be-b35c-f73ac1a81582">
-      <driver-ref>mysql</driver-ref>
+      <driver-ref>b52db8aa-39db-4c89-ad70-85f05b4cd802</driver-ref>
       <synchronize>true</synchronize>
       <imported>true</imported>
       <remarks>$PROJECT_DIR$/photo_blog/settings.py</remarks>
@@ -24,6 +24,20 @@
           <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/MySQL Connector/J/5.1.35/mysql-connector-java-5.1.35-bin.jar</url>
         </library>
       </libraries>
+    </data-source>
+    <data-source source="LOCAL" name="Live PersonalSite" uuid="cba968bd-f8f0-449b-8714-11cf9de94207">
+      <driver-ref>mysql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:6603/personalsite</jdbc-url>
+      <driver-properties>
+        <property name="autoReconnect" value="true" />
+        <property name="zeroDateTimeBehavior" value="CONVERT_TO_NULL" />
+        <property name="tinyInt1isBit" value="false" />
+        <property name="characterEncoding" value="utf8" />
+        <property name="characterSetResults" value="utf8" />
+        <property name="yearIsDateType" value="false" />
+      </driver-properties>
     </data-source>
   </component>
 </project>

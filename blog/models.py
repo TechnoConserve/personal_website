@@ -114,6 +114,7 @@ BLOCK_TYPES = [
     ('heading', Heading(classname='full title')),
     ('paragraph', blocks.RichTextBlock(requeried=True, classname='paragraph')),
     ('code_chunk', CodeBlock()),
+    ('quote', blocks.BlockQuoteBlock(required=False, help_text="Text to be wrapped in <blockquote> tag pair"))
 ]
 
 

@@ -37,7 +37,7 @@ msgpack-python==0.5.6
 mysqlclient==1.4.2.post1
 olefile==0.46
 pika==1.1.0
-Pillow==5.4.1
+Pillow==6.2.0
 pluggy==0.6.0
 py==1.5.3
 pycparser==2.19

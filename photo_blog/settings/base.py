@@ -51,7 +51,6 @@ INSTALLED_APPS = [
     'taggit',
     'django_uwsgi',
 
-    'home',  # Customize Wagtail
     'blog',
     'custom_user',
 ]
@@ -84,7 +83,7 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
             ],
             'libraries': {
-                'home_tags': 'home.templatetags.home_extras',
+                'home_tags': 'custom_user.templatetags.home_extras',
             },
         },
     },

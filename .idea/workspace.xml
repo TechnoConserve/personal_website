@@ -1,9 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5daa2f32-aa60-4cce-90a6-f0a4d8f21f6f" name="Default" comment="Project Bugger Addition&#10;&#10;Added another URL to a frogger type web app in the new dropdown menu.">
-      <change afterPath="$PROJECT_DIR$/blog/migrations/0008_auto_20190730_2024.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/models.py" afterDir="false" />
+    <list default="true" id="5daa2f32-aa60-4cce-90a6-f0a4d8f21f6f" name="Default" comment="Wagtail, Django-taggit, Willow, Django-modelcluster Upgrades&#10;&#10;Upgraded Wagtail from 2.5.1 to 2.7.&#10;&#10;To meet the requirements of Wagtail 2.7, django-taggit, willow, and&#10;django-modelcluster were also upgraded.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom_user/templatetags/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/home/css/landing.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/home/img/bee_on_flower_comp.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/home/home_page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templatetags/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templatetags/home_extras.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom_user/templatetags/home_extras.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/photo_blog/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/photo_blog/settings/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/photo_blog/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/photo_blog/templates/base.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -122,18 +136,18 @@
     </option>
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/home/static/home/css" />
-      <recent name="$PROJECT_DIR$/home/static/home" />
-      <recent name="$PROJECT_DIR$/photo_blog/static/img" />
-      <recent name="$PROJECT_DIR$/blog/templates/blog/tags" />
-      <recent name="$PROJECT_DIR$/photo_blog/templates" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/photo_blog/static/img" />
       <recent name="$PROJECT_DIR$/custom_user/templates/accounts" />
       <recent name="$PROJECT_DIR$/home" />
       <recent name="$PROJECT_DIR$/photo_blog/templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/custom_user" />
+      <recent name="$PROJECT_DIR$/home/static/home/css" />
+      <recent name="$PROJECT_DIR$/home/static/home" />
+      <recent name="$PROJECT_DIR$/photo_blog/static/img" />
+      <recent name="$PROJECT_DIR$/blog/templates/blog/tags" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -148,7 +162,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Django server.Personal Site">
+  <component name="RunManager" selected="Django tests.All Tests">
     <configuration default="true" type="tests" factoryName="Attests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -350,13 +364,8 @@
       <workItem from="1564097068679" duration="12987000" />
       <workItem from="1564252078300" duration="8331000" />
       <workItem from="1564265026961" duration="4250000" />
-    </task>
-    <task id="LOCAL-00019" summary="Actually, I did want an author so I added it.">
-      <created>1483398344073</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1483398344073</updated>
+      <workItem from="1565040386029" duration="1817000" />
+      <workItem from="1573059037077" duration="5838000" />
     </task>
     <task id="LOCAL-00020" summary="Added support for Disqus comments.">
       <created>1483400754394</created>
@@ -694,7 +703,14 @@
       <option name="project" value="LOCAL" />
       <updated>1528838825095</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="Wagtail, Django-taggit, Willow, Django-modelcluster Upgrades&#10;&#10;Upgraded Wagtail from 2.5.1 to 2.7.&#10;&#10;To meet the requirements of Wagtail 2.7, django-taggit, willow, and&#10;django-modelcluster were also upgraded.">
+      <created>1573070337814</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1573070337814</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -718,8 +734,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="true" />
-    <MESSAGE value="Removed user attribute from the instances which were already user objects." />
-    <MESSAGE value="Hooked up navbar login form and added relevant account links." />
     <MESSAGE value="Added missing div tag." />
     <MESSAGE value="Modified BlogIndexPage wagtail model to allow for an about field." />
     <MESSAGE value="Rework of BlogIndexPage to allow for listing archive of posts by time." />
@@ -743,7 +757,9 @@
     <MESSAGE value="Disabled Google Banner Ad On Landing Page" />
     <MESSAGE value="Project Nav&#10;&#10;Added a topbar nav addition for other web projects. Added a URL to a&#10;memory game web app in the new dropdown menu." />
     <MESSAGE value="Project Bugger Addition&#10;&#10;Added another URL to a frogger type web app in the new dropdown menu." />
-    <option name="LAST_COMMIT_MESSAGE" value="Project Bugger Addition&#10;&#10;Added another URL to a frogger type web app in the new dropdown menu." />
+    <MESSAGE value="Block quote feature added to blog app&#10;&#10;Added a BlockQuoteBlock to the StreamField of BlogPages so that blog&#10;posts could include text that will be wrapped in blockquote html tags." />
+    <MESSAGE value="Wagtail, Django-taggit, Willow, Django-modelcluster Upgrades&#10;&#10;Upgraded Wagtail from 2.5.1 to 2.7.&#10;&#10;To meet the requirements of Wagtail 2.7, django-taggit, willow, and&#10;django-modelcluster were also upgraded." />
+    <option name="LAST_COMMIT_MESSAGE" value="Wagtail, Django-taggit, Willow, Django-modelcluster Upgrades&#10;&#10;Upgraded Wagtail from 2.5.1 to 2.7.&#10;&#10;To meet the requirements of Wagtail 2.7, django-taggit, willow, and&#10;django-modelcluster were also upgraded." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/averyuslaner_com$Test__custom_user___settings_photo_blog_settings_dev.coverage" NAME="Test: custom_user --settings photo_blog.settings.dev Coverage Results" MODIFIED="1564252899832" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
@@ -751,6 +767,7 @@
     <SUITE FILE_PATH="coverage/averyuslaner_com$Test__custom_user_tests_CreateCustomSuperUserTest.coverage" NAME="Test: custom_user.tests.CreateCustomSuperUserTest Coverage Results" MODIFIED="1564250465791" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/averyuslaner_com$Test__.coverage" NAME="Test:  Coverage Results" MODIFIED="1564256073727" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/averyuslaner_com$Test__custom_user_tests_UsersManagersTests_test_create_user.coverage" NAME="Test: custom_user.tests.UsersManagersTests.test_create_user Coverage Results" MODIFIED="1564252295309" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/averyuslaner_com$All_Tests.coverage" NAME="All Tests Coverage Results" MODIFIED="1573070790831" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/averyuslaner_com$Unnamed.coverage" NAME="All Tests Coverage Results" MODIFIED="1564258884133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/averyuslaner_com$Test_CustomUser.coverage" NAME="Test CustomUser Coverage Results" MODIFIED="1564260416869" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/averyuslaner_com$Test__custom_user_tests_UsersManagersTests.coverage" NAME="Test: custom_user.tests.UsersManagersTests Coverage Results" MODIFIED="1564255889162" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

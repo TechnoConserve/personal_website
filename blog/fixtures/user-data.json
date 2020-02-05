@@ -1,0 +1,22 @@
+[
+  {
+    "model": "custom_user.customuser",
+    "pk": 3,
+    "fields": {
+      "password": "argon2$argon2i$v=19$m=512,t=2,p=2$dXhqV1RjNzJwSFNm$3L8oiOrBYKI5lBIa0ggFog",
+      "last_login": null,
+      "date_joined": "2019-07-27T21:06:38.379Z",
+      "email": "admin@email.com",
+      "username": "test_admin",
+      "first_name": "admin",
+      "last_name": null,
+      "is_active": true,
+      "is_staff": true,
+      "is_superuser": true,
+      "created_at": "2019-07-27T21:06:38.384Z",
+      "updated_at": "2019-07-27T21:06:38.384Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  }
+]

@@ -4,8 +4,8 @@ from __future__ import unicode_literals
 
 import blog.models
 from django.db import migrations
-import wagtail.wagtailcore.blocks
-import wagtail.wagtailcore.fields
+import wagtail.core.blocks
+import wagtail.core.fields
 
 
 class Migration(migrations.Migration):
@@ -18,6 +18,6 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='blogpage',
             name='body',
-            field=wagtail.wagtailcore.fields.StreamField((('heading', blog.models.Heading(classname='full title')), ('paragraph', wagtail.wagtailcore.blocks.RichTextBlock(classname='paragraph', requeried=True)), ('code_chunk', wagtail.wagtailcore.blocks.StructBlock((('code', wagtail.wagtailcore.blocks.TextBlock(max_length=8000)), ('language', wagtail.wagtailcore.blocks.ChoiceBlock(choices=[('python', 'Python'), ('django', 'Django'), ('css', 'CSS'), ('http', 'HTTP'), ('javascript', 'JavaScript'), ('bash', 'Bash'), ('dockerfile', 'Dockerfile'), ('ini', 'Ini'), ('sql', 'SQL'), ('json', 'JSON'), ('markdown', 'Markdown'), ('html', 'HTML'), ('xml', 'XML'), ('java', 'Java'), ('nginx', 'Nginx')], required=False)))))), verbose_name='body'),
+            field=wagtail.core.fields.StreamField((('heading', blog.models.Heading(classname='full title')), ('paragraph', wagtail.core.blocks.RichTextBlock(classname='paragraph', requeried=True)), ('code_chunk', wagtail.core.blocks.StructBlock((('code', wagtail.core.blocks.TextBlock(max_length=8000)), ('language', wagtail.core.blocks.ChoiceBlock(choices=[('python', 'Python'), ('django', 'Django'), ('css', 'CSS'), ('http', 'HTTP'), ('javascript', 'JavaScript'), ('bash', 'Bash'), ('dockerfile', 'Dockerfile'), ('ini', 'Ini'), ('sql', 'SQL'), ('json', 'JSON'), ('markdown', 'Markdown'), ('html', 'HTML'), ('xml', 'XML'), ('java', 'Java'), ('nginx', 'Nginx')], required=False)))))), verbose_name='body'),
         ),
     ]

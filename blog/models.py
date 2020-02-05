@@ -5,14 +5,15 @@ from django.utils import timezone
 
 from modelcluster.contrib.taggit import ClusterTaggableManager
 from modelcluster.fields import ParentalKey
-from taggit.models import TaggedItemBase
+from taggit.models import TaggedItemBase, Tag as TaggitTag
 
-from wagtail.wagtailcore import blocks
-from wagtail.wagtailcore.fields import RichTextField, StreamField
-from wagtail.wagtailcore.models import Page, Orderable
-from wagtail.wagtailadmin.edit_handlers import FieldPanel, InlinePanel, MultiFieldPanel, StreamFieldPanel
-from wagtail.wagtailimages.edit_handlers import ImageChooserPanel
-from wagtail.wagtailsearch import index
+from wagtail.core import blocks
+from wagtail.core.fields import RichTextField, StreamField
+from wagtail.core.models import Page, Orderable
+from wagtail.admin.edit_handlers import FieldPanel, InlinePanel, MultiFieldPanel, StreamFieldPanel
+from wagtail.images.edit_handlers import ImageChooserPanel
+from wagtail.search import index
+from wagtail.snippets.models import register_snippet
 
 from .routes import BlogRoutes
 
@@ -88,22 +89,33 @@ class BlogTagIndexPage(Page):
     def get_context(self, request):
         #Filter by tag
         tag = request.GET.get('tag')
-        blogpages = BlogPage.objects.filter().filter(tags__name=tag)
+        blogpages = BlogPage.objects.filter(tags__name=tag)
 
         # Update template context
-        context = super(BlogTagIndexPage, self).get_context(request)
+        context = super().get_context(request)
         context['blogpages'] = blogpages
         return context
 
 
 class BlogPageTag(TaggedItemBase):
-    content_object = ParentalKey('BlogPage', related_name='tagged_items')
+    content_object = ParentalKey(
+        'BlogPage',
+        related_name='tagged_items',
+        on_delete=models.CASCADE
+    )
+
+
+@register_snippet
+class Tag(TaggitTag):
+    class Meta:
+        proxy = True
 
 
 BLOCK_TYPES = [
     ('heading', Heading(classname='full title')),
-    ('paragraph', blocks.RichTextBlock(requeried=True, classname='paragraph')),
+    ('paragraph', blocks.RichTextBlock(required=True, classname='paragraph')),
     ('code_chunk', CodeBlock()),
+    ('quote', blocks.BlockQuoteBlock(required=False, help_text="Text to be wrapped in <blockquote> tag pair"))
 ]
 
 
@@ -141,7 +153,7 @@ class BlogPage(Page):
 
 
 class BlogPageGalleryImage(Orderable):
-    page = ParentalKey(BlogPage, related_name='gallery_images')
+    page = ParentalKey(BlogPage, on_delete=models.CASCADE, related_name='gallery_images')
     image = models.ForeignKey(
         'wagtailimages.Image', on_delete=models.CASCADE, related_name='+'
     )

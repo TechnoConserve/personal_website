@@ -1,29 +1,26 @@
-from django.contrib.auth import get_user_model
-
-from wagtail.wagtailcore.models import Page
-from wagtail.tests.utils import WagtailPageTests
-
-from .models import BlogIndexPage, BlogPage
+from django.contrib.staticfiles.testing import StaticLiveServerTestCase
+from selenium.webdriver.firefox.webdriver import WebDriver
 
 
-class TestBlogPage(WagtailPageTests):
-    def setUp(self):
-        home = Page.objects.get(slug='home')
-        self.user = get_user_model().objects.create_user(username='test', first_name='Test', last_name='User',
-                                                         email='test@test.test', password='pass')
-        self.xml_path = "example_export.xml"
-        self.blog_index = home.add_child(instance=BlogIndexPage(
-            title='Blog Index', slug='blog', search_description='search description',
-            owner=self.user))
+class BlogPageTests(StaticLiveServerTestCase):
+    fixtures = ['user-data.json']
 
-    def test_index(self):
-        url = self.blog_index.url
-        res = self.client.get(url)
-        self.assertEqual(res.status_code, 200)
+    @classmethod
+    def setUpClass(cls):
+        super().setUpClass()
+        cls.selenium = WebDriver()
+        cls.selenium.implicitly_wait(10)
 
-        blog_page = self.blog_index.add_child(instance=BlogPage(
-            title='Blog Page', slug='blog_page1', search_description='search description', intro='Intro',
-            owner=self.user))
-        url = blog_page.url
-        res = self.client.get(url)
-        self.assertContains(res, "Blog Page")
+    @classmethod
+    def tearDownClass(cls):
+        cls.selenium.quit()
+        super().tearDownClass()
+
+    def test_login(self):
+        self.selenium.get("{}{}".format(self.live_server_url, "/login/"))
+        username_input = self.selenium.find_element_by_name("username")
+        username_input.send_keys("test_admin")
+        password_input = self.selenium.find_element_by_name("password")
+        password_input.send_keys("password")
+
+        self.selenium.find_element_by_xpath("/html/body/div/div[2]/form/button[contains(text(), 'Log in')]").click()

@@ -1,18 +1,40 @@
-import pytest
-
+from django.test import TestCase
 from django.contrib.auth import get_user_model
 
 
-class TestCustomUser(object):
-    @pytest.fixture(scope='module')
-    def django_db_setup(self, django_db_setup, django_db_blocker):
-        with django_db_blocker.unblock():
-            get_user_model().objects.create(username='a')
-        yield
-        with django_db_blocker.unblock():
-            get_user_model().objects.filter(username='a').delete()
+class UsersManagersTests(TestCase):
+    def test_create_user(self):
+        User = get_user_model()
+        user = User.objects.create_user(
+            email="test@email.com",
+            first_name="Test",
+            password="foo",
+            username="test_user"
+        )
+        self.assertEqual(user.email, 'test@email.com')
+        self.assertTrue(user.is_active)
+        self.assertFalse(user.is_staff)
+        self.assertFalse(user.is_superuser)
+        with self.assertRaises(TypeError):
+            User.objects.create_user()
+        with self.assertRaises(TypeError):
+            User.objects.create_user(email='')
+        with self.assertRaises(ValueError):
+            User.objects.create_user(email='', first_name='test', username='test_user', password='foo')
 
-    @pytest.mark.django_db
-    def test_user_creation(self):
-        assert get_user_model().objects.count() == 1
-        assert get_user_model().objects.get(username='a').username == 'a'
+    def test_create_superuser(self):
+        User = get_user_model()
+        admin_user = User.objects.create_superuser(
+            email='admin@email.com',
+            first_name='Admin',
+            password='foo',
+            username='admin'
+        )
+        self.assertEqual(admin_user.email, 'admin@email.com')
+        self.assertTrue(admin_user.is_active)
+        self.assertTrue(admin_user.is_staff)
+        self.assertTrue(admin_user.is_superuser)
+        with self.assertRaises(ValueError):
+            User.objects.create_superuser(
+                email='admin2@email.com', first_name='admin2', username='admin2', password='foo', is_superuser=False
+            )

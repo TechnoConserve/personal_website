@@ -1,3 +1,4 @@
+argon2-cffi==19.2.0
 asgiref==3.2.3
 attrs==19.3.0
 autobahn==20.1.3

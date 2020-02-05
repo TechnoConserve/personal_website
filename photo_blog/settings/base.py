@@ -49,7 +49,6 @@ INSTALLED_APPS = [
 
     'modelcluster',
     'taggit',
-    'django_uwsgi',
 
     'blog',
     'custom_user',

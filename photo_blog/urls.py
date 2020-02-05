@@ -15,7 +15,6 @@ urlpatterns = [
     path('admin/', include(wagtailadmin_urls)),
     path('documents/', include(wagtaildocs_urls)),
     path('django-admin/', admin.site.urls),
-    path('admin/uwsgi/', include('django_uwsgi.urls')),
     path('accounts/edit/',
          account_views.edit_profile,
          name='edit_profile',

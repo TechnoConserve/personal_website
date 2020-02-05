@@ -104,3 +104,4 @@ dataSources.ids
 /.idea
 fullchain.pem
 privkey.pem
+/.idea/

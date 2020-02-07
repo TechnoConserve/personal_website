@@ -97,12 +97,11 @@ WSGI_APPLICATION = 'photo_blog.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'personalsite',
-        'USER': 'ave',
-        'PASSWORD': os.environ.get('AVE_DB_PASS', ''),
-        'HOST': '127.0.0.1',
-        'PORT': '3306',
-        'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
+        'OPTIONS': {
+            'read_default_file': '/home/ave/mysql_django_personalsite.cnf',
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
+            'isolation_level': 'read committed',
+        },
     }
 }
 

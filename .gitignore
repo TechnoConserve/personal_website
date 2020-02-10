@@ -105,3 +105,4 @@ dataSources.ids
 fullchain.pem
 privkey.pem
 /.idea/
+static

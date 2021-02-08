@@ -204,6 +204,8 @@ WAGTAIL_USER_EDIT_FORM = 'custom_user.forms.CustomUserEditForm'
 WAGTAIL_USER_CREATION_FORM = 'custom_user.forms.CustomUserCreationForm'
 WAGTAIL_USER_CUSTOM_FIELDS = []  # Nothing yet
 
+WAGTAILEMBEDS_RESPONSIVE_HTML = True
+
 
 # Django-registration
 ACCOUNT_ACTIVATION_DAYS = 7

@@ -42,7 +42,7 @@ pyparsing==2.4.6
 pytest==5.3.5
 pytest-django==3.8.0
 pytz==2019.3
-requests==2.22.0
+requests==2.25.1
 selenium==3.141.0
 service-identity==18.1.0
 six==1.14.0
@@ -50,7 +50,7 @@ sqlparse==0.3.0
 Twisted==20.3.0
 txaio==20.1.1
 Unidecode==1.1.1
-urllib3==1.25.9
+urllib3==1.26.5
 wagtail==2.13.2
 wcwidth==0.1.8
 webencodings==0.5.1

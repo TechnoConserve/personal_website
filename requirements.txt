@@ -22,7 +22,7 @@ h2==3.2.0
 hpack==3.0.0
 html5lib==1.0.1
 hyperframe==5.2.0
-hyperlink==19.0.0
+hyperlink==21.0.0
 idna==2.8
 incremental==17.5.0
 l18n==2018.5
@@ -48,7 +48,7 @@ service-identity==18.1.0
 six==1.14.0
 sqlparse==0.3.0
 Twisted==20.3.0
-txaio==20.1.1
+txaio==21.2.1
 Unidecode==1.1.1
 urllib3==1.26.5
 wagtail==2.13.2

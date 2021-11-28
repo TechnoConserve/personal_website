@@ -100,9 +100,10 @@ mysql_database.cnf
 # PyCharm
 tasks.xml
 dataSources.ids
-/static/
 /.idea
 fullchain.pem
 privkey.pem
 /.idea/
-static
+static/
+media/
+.pytest_cache/

@@ -8,6 +8,7 @@ from django.urls import include, path
 from django.conf.urls.static import static
 from django.contrib import admin
 
+from civ.views import civ_webhook
 from custom_user.forms import CustomUserForm
 import custom_user.views as account_views
 
@@ -28,6 +29,8 @@ urlpatterns = [
     path('accounts/', include('django_registration.backends.activation.urls')),
 
     path('blog/', include('blog.urls')),
+
+    path("webhooks/civ/bakrui9vwrtuv2dax4a354yit/", civ_webhook),
 
     # User stats
     path('~<username>/', account_views.user_profile, name='user_profile'),

@@ -34,9 +34,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'wagtail.contrib.routable_page',
     'wagtail.contrib.forms',
     'wagtail.contrib.redirects',
+    'wagtail.contrib.routable_page',
+    'wagtail.contrib.modeladmin',
     'wagtail.embeds',
     'wagtail.sites',
     'wagtail.users',
@@ -51,6 +52,7 @@ INSTALLED_APPS = [
     'taggit',
 
     'blog',
+    'civ',
     'custom_user',
 ]
 
@@ -212,3 +214,6 @@ ACCOUNT_ACTIVATION_DAYS = 7
 
 # Django auth settings
 LOGIN_REDIRECT_URL = 'edit_profile'
+
+# Civ Cloud Play Discord Notification
+DISCORD_WEBHOOK_URL = os.environ.get("DISCORD_WEBHOOK_URL", None)

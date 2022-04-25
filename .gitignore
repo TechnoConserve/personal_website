@@ -104,7 +104,7 @@ dataSources.ids
 fullchain.pem
 privkey.pem
 /.idea/
-web/static/
-web/media/
+web/static/*
+web/media/*
 .pytest_cache/
 *.env

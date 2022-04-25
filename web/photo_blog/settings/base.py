@@ -227,14 +227,6 @@ LOGGING = {
             'style': '{',
         },
     },
-    'filters': {
-        'special': {
-            '()': 'project.logging.SpecialFilter',
-        },
-        'require_debug_true': {
-            '()': 'django.utils.log.RequireDebugTrue',
-        },
-    },
     'handlers': {
         'console': {
             'level': 'DEBUG',
@@ -245,7 +237,6 @@ LOGGING = {
         'mail_admins': {
             'level': 'ERROR',
             'class': 'django.utils.log.AdminEmailHandler',
-            'filters': ['special']
         }
     },
     'loggers': {

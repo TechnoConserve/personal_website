@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(PROJECT_DIR)
 # See https://docs.djangoproject.com/en/1.10/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('AVE_SECRET_KEY', '')
+SECRET_KEY = os.environ.get('AVE_SECRET_KEY')
 
 
 # Application definition
@@ -98,10 +98,14 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'OPTIONS': {
-            'read_default_file': '/home/ave/mysql_django_personalsite.cnf',
             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
             'isolation_level': 'read committed',
         },
+        'HOST': 'ave-db',
+        'USER': os.environ.get('MYSQL_USER'),
+        'NAME': os.environ.get('MYSQL_DATABASE'),
+        'PORT': 3306,
+        'PASSWORD': os.environ.get('MYSQL_PASSWORD'),
     }
 }
 
@@ -159,14 +163,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
-STATICFILES_FINDERS = [
-    'django.contrib.staticfiles.finders.FileSystemFinder',
-    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-]
-
-STATICFILES_DIRS = [
-    os.path.join(PROJECT_DIR, 'static'),
-]
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'

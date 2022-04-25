@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  nginx:
+    environment:
+    - IP_ADDR=localhost
+
+    ports:
+      - "9000:80"

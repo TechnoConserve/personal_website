@@ -108,3 +108,4 @@ web/static/*
 web/media/*
 .pytest_cache/
 *.env
+certs

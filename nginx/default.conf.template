@@ -36,6 +36,10 @@ server {
         proxy_redirect off;
     }
 
+    location ~ /.well-known/acme-challenge {
+        allow all;
+        try_files $uri $uri/ /index.php;
+    }
 }
 
 # Redirect intranet requests to HTTPS

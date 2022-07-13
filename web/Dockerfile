@@ -6,16 +6,16 @@ ENV PYTHONDONTWRITEBYTECODE=1
 # Turns off buffering for easier container logging
 ENV PYTHONUNBUFFERED=1
 
-# Install pip requirements
-COPY requirements.txt .
-RUN python -m pip install -r requirements.txt
-RUN python -m pip install daphne
-
 # Install Stuff for Selenium Testing
 RUN apt update && apt upgrade -y
 RUN apt install firefox-esr -y
 RUN wget https://github.com/mozilla/geckodriver/releases/download/v0.26.0/geckodriver-v0.26.0-linux64.tar.gz
 RUN tar -zxf geckodriver-v0.26.0-linux64.tar.gz -C /usr/bin
+
+# Install pip requirements
+COPY requirements.txt .
+RUN python -m pip install -r requirements.txt
+RUN python -m pip install daphne
 
 WORKDIR /app
 COPY . /app

@@ -10,3 +10,4 @@ RUN ln -s /opt/certbot/bin/certbot /usr/bin/certbot
 RUN rm /etc/nginx/conf.d/default.conf
 COPY default.conf.template /etc/nginx/templates/
 COPY digitalocean.ini /digitalocean.ini
+COPY certbot.sh /certbot.sh

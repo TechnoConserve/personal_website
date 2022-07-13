@@ -6,12 +6,7 @@ RUN python3 -m venv /opt/certbot/
 RUN /opt/certbot/bin/pip install --upgrade pip
 RUN /opt/certbot/bin/pip install certbot certbot-nginx certbot-dns-digitalocean
 RUN ln -s /opt/certbot/bin/certbot /usr/bin/certbot
-RUN certbot certonly \
-    --agree-tos \
-    -m uslaner.avery@gmail.com \
-    --dns-digitalocean \
-    --dns-digitalocean-credentials /digitalocean.ini \
-    -d averyuslaner.com 
 
 RUN rm /etc/nginx/conf.d/default.conf
 COPY default.conf.template /etc/nginx/templates/
+COPY digitalocean.ini /digitalocean.ini

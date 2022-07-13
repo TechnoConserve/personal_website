@@ -1,9 +1,11 @@
 FROM nginx:latest
 
-RUN apt update && apt install -y snapd
-RUN snap install core; sudo snap refresh core
-RUN snap install --classic certbot
-RUN ln -s /snap/bin/certbot /usr/bin/certbot
+RUN apt update
+RUN apt install python3 python3-venv libaugeas0
+RUN python3 -m venv /opt/certbot/
+RUN /opt/certbot/bin/pip install --upgrade pip
+RUN /opt/certbot/bin/pip install certbot certbot-nginx
+RUN ln -s /opt/certbot/bin/certbot /usr/bin/certbot
 RUN certbot certonly --nginx
 
 RUN rm /etc/nginx/conf.d/default.conf

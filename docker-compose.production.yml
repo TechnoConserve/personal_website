@@ -17,3 +17,4 @@ services:
       - static_volume:/app/static
       - media_volume:/app/media
       - ./certs:/etc/ssl/certs
+      - ./nginx/digitalocean.ini:/digitalocean.ini

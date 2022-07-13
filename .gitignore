@@ -101,11 +101,13 @@ mysql_database.cnf
 tasks.xml
 dataSources.ids
 /.idea
-fullchain.pem
-privkey.pem
 /.idea/
-web/static/*
-web/media/*
 .pytest_cache/
 *.env
+
 certs
+fullchain.pem
+privkey.pem
+web/static/*
+web/media/*
+nginx/digitalocean.ini

@@ -1,0 +1,18 @@
+version: "3.9"
+
+services:
+  nginx:
+    build: ./nginx
+    container_name: ave-nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      IP_ADDR: ${IP_ADDR}
+    restart:
+      unless-stopped
+    depends_on:
+      - web
+    volumes:
+      - static_volume:/app/static
+      - media_volume:/app/media

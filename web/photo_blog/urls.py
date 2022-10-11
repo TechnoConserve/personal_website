@@ -13,6 +13,7 @@ from custom_user.forms import CustomUserForm
 import custom_user.views as account_views
 
 urlpatterns = [
+    path('__debug__/', include('debug_toolbar.urls')),
     path('admin/', include(wagtailadmin_urls)),
     path('documents/', include(wagtaildocs_urls)),
     path('django-admin/', admin.site.urls),

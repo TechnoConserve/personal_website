@@ -10,8 +10,8 @@ chardet==3.0.4
 confusable-homoglyphs==3.2.0
 constantly==15.1.0
 cryptography==3.3.2
-daphne==3.0.1
 Django==3.1.13
+django-debug-toolbar==3.2.4
 django-modelcluster==5.1
 django-registration==3.1.2
 django-taggit==1.2.0

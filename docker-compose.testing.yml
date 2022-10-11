@@ -1,9 +1,7 @@
 version: "3.9"
 
 services:
-  nginx:
-    environment:
-    - IP_ADDR=localhost
-
+  web:
+    command: bash -c "python manage.py collectstatic --no-input && python manage.py migrate && python manage.py runserver 0.0.0.0:9000"
     ports:
-      - "9000:80"
+      - "9000:9000"

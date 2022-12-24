@@ -12,7 +12,7 @@ confusable-homoglyphs==3.2.0
 constantly==15.1.0
 cryptography==3.3.2
 daphne==3.0.2
-Django==3.1.13
+Django==3.1.14
 django-debug-toolbar==3.2.4
 django-filter==2.4.0
 django-modelcluster==5.1

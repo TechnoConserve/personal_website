@@ -14,6 +14,8 @@ services:
   web:
     build: ./web
     container_name: ave-web
+    ports:
+      - "9000:9000"
     volumes:
       - static_volume:/app/static
       - media_volume:/app/media

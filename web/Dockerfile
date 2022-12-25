@@ -13,8 +13,8 @@ RUN python -m pip install -r requirements.txt
 RUN mkdir /app
 COPY . /app
 
-RUN mkdir /app/media
-RUN mkdir /app/static
+RUN mkdir -p /app/media
+RUN mkdir -p /app/static
 
 RUN adduser -u 5678 --disabled-password --gecos "" appuser
 RUN chown -R appuser:101 /app

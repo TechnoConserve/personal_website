@@ -17,7 +17,7 @@ RUN mkdir -p /app/media
 RUN mkdir -p /app/static
 
 RUN adduser -u 5678 --disabled-password --gecos "" appuser
-RUN chown -R appuser:appuser /app
+RUN chown -R appuser:101 /app
 RUN chmod -R 764 /app/media
 RUN chmod -R 764 /app/static
 

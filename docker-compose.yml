@@ -6,6 +6,7 @@ services:
     container_name: ave-db
     volumes:
       - mysql_data:/var/lib/mysql/
+      - ./db:/docker-entrypoint-initdb.d
     env_file:
       - db.env
     restart:

@@ -100,10 +100,7 @@ WSGI_APPLICATION = 'photo_blog.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'OPTIONS': {
-            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
-            'isolation_level': 'read committed',
-        },
+        'OPTIONS': {'charset': 'utf8mb4'},
         'HOST': 'ave-db',
         'USER': os.environ.get('MYSQL_USER'),
         'NAME': os.environ.get('MYSQL_DATABASE'),

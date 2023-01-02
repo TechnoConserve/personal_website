@@ -6,6 +6,7 @@ services:
     container_name: ave-db
     volumes:
       - mysql_data:/var/lib/mysql/
+      - ./db/my.cnf:/etc/mysql/my.cnf
       - ./db:/docker-entrypoint-initdb.d
     env_file:
       - db.env
@@ -22,7 +23,10 @@ services:
       - media_volume:/app/media
     env_file:
       - web.env
-    command: bash -c "python manage.py collectstatic --no-input && python manage.py migrate && daphne -b 0.0.0.0 -p 9000 photo_blog.asgi:application"
+    command: bash -c "python manage.py collectstatic --no-input && \
+      python manage.py migrate && \
+      python manage.py update_index && \
+      daphne -b 0.0.0.0 -p 9000 photo_blog.asgi:application"
     depends_on:
       - db
     restart:

@@ -147,8 +147,7 @@ AUTH_USER_MODEL = 'custom_user.CustomUser'
 
 WAGTAILSEARCH_BACKENDS = {
     'default': {
-        'BACKEND': 'wagtail.search.backends.db',
-        'INDEX': 'myapp'
+        'BACKEND': 'wagtail.search.backends.database',
     }
 }
 

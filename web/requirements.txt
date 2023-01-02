@@ -60,7 +60,7 @@ Twisted==20.3.0
 txaio==21.2.1
 Unidecode==1.1.1
 urllib3==1.26.5
-wagtail==2.14.2
+wagtail==2.15.6
 wcwidth==0.1.8
 webencodings==0.5.1
 Willow==1.4

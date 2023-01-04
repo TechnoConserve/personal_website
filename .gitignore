@@ -111,4 +111,3 @@ privkey.pem
 web/static/*
 web/media/*
 db/*.sql
-web/blog/fixtures/user-data.json

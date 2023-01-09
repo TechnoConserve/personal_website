@@ -15,7 +15,7 @@ daphne==3.0.2
 Django==3.2.16
 django-debug-toolbar==3.2.4
 django-filter==2.4.0
-django-modelcluster==5.2
+django-modelcluster==6.0
 django-registration==3.1.2
 django-taggit==2.0.0
 django-treebeard==4.5.1
@@ -60,7 +60,7 @@ Twisted==20.3.0
 txaio==21.2.1
 Unidecode==1.1.1
 urllib3==1.26.5
-wagtail==2.16.3
+wagtail==3.0.3
 wcwidth==0.1.8
 webencodings==0.5.1
 Willow==1.4

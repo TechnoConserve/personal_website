@@ -46,7 +46,7 @@ INSTALLED_APPS = [
     'wagtail.images',
     'wagtail.search',
     'wagtail.admin',
-    'wagtail.core',
+    'wagtail',
 
     'modelcluster',
     'taggit',
@@ -203,6 +203,7 @@ ADMINS = [
 ]
 MANAGERS = ADMINS
 
+WAGTAILADMIN_BASE_URL = 'https://averyuslaner.com'
 WAGTAILADMIN_NOTIFICATION_FROM_EMAIL = 'admin@averyuslaner.com'
 WAGTAILADMIN_NOTIFICATION_USE_HTML = True
 

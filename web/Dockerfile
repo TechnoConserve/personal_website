@@ -1,4 +1,4 @@
-FROM python:latest
+FROM python:3.10
 
 # Keeps Python from generating .pyc files in the container
 ENV PYTHONDONTWRITEBYTECODE=1
@@ -6,21 +6,20 @@ ENV PYTHONDONTWRITEBYTECODE=1
 # Turns off buffering for easier container logging
 ENV PYTHONUNBUFFERED=1
 
-# Install Stuff for Selenium Testing
-RUN apt update && apt upgrade -y
-RUN apt install firefox-esr -y
-RUN wget https://github.com/mozilla/geckodriver/releases/download/v0.26.0/geckodriver-v0.26.0-linux64.tar.gz
-RUN tar -zxf geckodriver-v0.26.0-linux64.tar.gz -C /usr/bin
-
 # Install pip requirements
 COPY requirements.txt .
 RUN python -m pip install -r requirements.txt
-RUN python -m pip install daphne
 
-WORKDIR /app
+RUN mkdir /app
 COPY . /app
 
-RUN adduser -u 5678 --disabled-password --gecos "" appuser && chown -R appuser /app
-USER appuser
+RUN mkdir -p /app/media
+RUN mkdir -p /app/static
 
-EXPOSE 9000
+RUN adduser -u 5678 --disabled-password --gecos "" appuser
+RUN chown -R appuser:101 /app
+RUN chmod -R 764 /app/media
+RUN chmod -R 764 /app/static
+
+WORKDIR /app
+USER appuser

@@ -17,8 +17,3 @@ EMAIL_SSL_CERTFILE = '/home/ave/PycharmProjects/averyuslaner.com/fullchain.pem'
 INSTALLED_APPS += [
     'debug_toolbar'
 ]
-
-try:
-    from .local import *
-except ImportError:
-    pass

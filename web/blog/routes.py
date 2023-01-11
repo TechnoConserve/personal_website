@@ -5,7 +5,7 @@ from django.utils.dateformat import DateFormat
 from django.utils.formats import date_format
 
 from wagtail.contrib.routable_page.models import RoutablePageMixin, route
-from wagtail.core.models import Page
+from wagtail.models import Page
 
 from custom_user.models import CustomUser
 

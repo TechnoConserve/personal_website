@@ -46,7 +46,7 @@ INSTALLED_APPS = [
     'wagtail.images',
     'wagtail.search',
     'wagtail.admin',
-    'wagtail.core',
+    'wagtail',
 
     'modelcluster',
     'taggit',
@@ -100,10 +100,7 @@ WSGI_APPLICATION = 'photo_blog.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'OPTIONS': {
-            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
-            'isolation_level': 'read committed',
-        },
+        'OPTIONS': {'charset': 'utf8mb4'},
         'HOST': 'ave-db',
         'USER': os.environ.get('MYSQL_USER'),
         'NAME': os.environ.get('MYSQL_DATABASE'),
@@ -147,8 +144,7 @@ AUTH_USER_MODEL = 'custom_user.CustomUser'
 
 WAGTAILSEARCH_BACKENDS = {
     'default': {
-        'BACKEND': 'wagtail.search.backends.db',
-        'INDEX': 'myapp'
+        'BACKEND': 'wagtail.search.backends.database',
     }
 }
 
@@ -164,8 +160,20 @@ USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/1.10/howto/static-files/
 
+STATICFILES_FINDERS = [
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+]
+
+STATICFILES_DIRS = [
+    os.path.join(PROJECT_DIR, 'static'),
+]
+
+# ManifestStaticFilesStorage is recommended in production, to prevent outdated
+# Javascript / CSS assets being served from cache (e.g. after a Wagtail upgrade).
+# See https://docs.djangoproject.com/en/3.0/ref/contrib/staticfiles/#manifeststaticfilesstorage
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
@@ -195,15 +203,12 @@ ADMINS = [
 ]
 MANAGERS = ADMINS
 
+WAGTAILADMIN_BASE_URL = 'https://averyuslaner.com'
 WAGTAILADMIN_NOTIFICATION_FROM_EMAIL = 'admin@averyuslaner.com'
 WAGTAILADMIN_NOTIFICATION_USE_HTML = True
 
 WAGTAIL_ENABLE_UPDATE_CHECK = True
 TAGGIT_CASE_INSENSITIVE = True
-
-WAGTAIL_USER_EDIT_FORM = 'custom_user.forms.CustomUserEditForm'
-WAGTAIL_USER_CREATION_FORM = 'custom_user.forms.CustomUserCreationForm'
-WAGTAIL_USER_CUSTOM_FIELDS = []  # Nothing yet
 
 WAGTAILEMBEDS_RESPONSIVE_HTML = True
 

@@ -1,7 +1,7 @@
 from django_registration.views import RegistrationView
 from wagtail.admin import urls as wagtailadmin_urls
 from wagtail.documents import urls as wagtaildocs_urls
-from wagtail.core import urls as wagtail_urls
+from wagtail import urls as wagtail_urls
 
 from django.conf import settings
 from django.urls import include, path

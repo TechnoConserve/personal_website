@@ -7,8 +7,8 @@ import datetime
 from django.db import migrations, models
 import django.db.models.deletion
 import modelcluster.fields
-import wagtail.core.blocks
-import wagtail.core.fields
+import wagtail.blocks
+import wagtail.fields
 
 
 class Migration(migrations.Migration):
@@ -26,7 +26,7 @@ class Migration(migrations.Migration):
             name='BlogIndexPage',
             fields=[
                 ('page_ptr', models.OneToOneField(auto_created=True, on_delete=django.db.models.deletion.CASCADE, parent_link=True, primary_key=True, serialize=False, to='wagtailcore.Page')),
-                ('intro', wagtail.core.fields.RichTextField(blank=True)),
+                ('intro', wagtail.fields.RichTextField(blank=True)),
             ],
             options={
                 'abstract': False,
@@ -39,7 +39,7 @@ class Migration(migrations.Migration):
                 ('page_ptr', models.OneToOneField(auto_created=True, on_delete=django.db.models.deletion.CASCADE, parent_link=True, primary_key=True, serialize=False, to='wagtailcore.Page')),
                 ('date', models.DateField(default=datetime.datetime.today, help_text='This date is displayed on the blog post. It is not used to schedule posts to go live at a later date.', verbose_name='Post date')),
                 ('intro', models.CharField(max_length=250)),
-                ('body', wagtail.core.fields.StreamField((('heading', blog.models.Heading(classname='full title')), ('paragraph', wagtail.core.blocks.RichTextBlock(classname='paragraph', requeried=True)), ('code_chunk', wagtail.core.blocks.StructBlock((('code', wagtail.core.blocks.TextBlock(max_length=8000)), ('language', wagtail.core.blocks.ChoiceBlock(choices=[('python', 'Python'), ('css', 'CSS'), ('http', 'HTTP'), ('javascript', 'JavaScript'), ('bash', 'Bash'), ('ini', 'Ini'), ('sql', 'SQL'), ('json', 'JSON'), ('markdown', 'Markdown'), ('html', 'HTML'), ('xml', 'XML'), ('java', 'Java'), ('nginx', 'Nginx')], default='python', required=False)))))), verbose_name='body')),
+                ('body', wagtail.fields.StreamField((('heading', blog.models.Heading(classname='full title')), ('paragraph', wagtail.blocks.RichTextBlock(classname='paragraph', requeried=True)), ('code_chunk', wagtail.blocks.StructBlock((('code', wagtail.blocks.TextBlock(max_length=8000)), ('language', wagtail.blocks.ChoiceBlock(choices=[('python', 'Python'), ('css', 'CSS'), ('http', 'HTTP'), ('javascript', 'JavaScript'), ('bash', 'Bash'), ('ini', 'Ini'), ('sql', 'SQL'), ('json', 'JSON'), ('markdown', 'Markdown'), ('html', 'HTML'), ('xml', 'XML'), ('java', 'Java'), ('nginx', 'Nginx')], default='python', required=False)))))), verbose_name='body')),
             ],
             options={
                 'abstract': False,

@@ -100,8 +100,7 @@ mysql_database.cnf
 # PyCharm
 tasks.xml
 dataSources.ids
-/.idea
-/.idea/
+.idea
 .pytest_cache/
 *.env
 

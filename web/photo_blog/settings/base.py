@@ -101,7 +101,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'OPTIONS': {'charset': 'utf8mb4'},
-        'HOST': 'ave-db',
+        'HOST': os.environ.get('DB_HOST', 'ave-db'),
         'USER': os.environ.get('MYSQL_USER'),
         'NAME': os.environ.get('MYSQL_DATABASE'),
         'PORT': 3306,

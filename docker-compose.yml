@@ -19,6 +19,7 @@ services:
     ports:
       - "9000:9000"
     volumes:
+      - ./web:/app
       - static_volume:/app/static
       - media_volume:/app/media
     env_file:

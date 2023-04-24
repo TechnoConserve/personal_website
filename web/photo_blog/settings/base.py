@@ -15,10 +15,6 @@ import os
 PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE_DIR = os.path.dirname(PROJECT_DIR)
 
-
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/1.10/howto/deployment/checklist/
-
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get('AVE_SECRET_KEY')
 
@@ -48,12 +44,14 @@ INSTALLED_APPS = [
     'wagtail.admin',
     'wagtail',
 
+    'imagekit',
     'modelcluster',
     'taggit',
 
     'blog',
     'civ',
     'custom_user',
+    'wagtail_photography',
 ]
 
 MIDDLEWARE = [
@@ -93,10 +91,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'photo_blog.wsgi.application'
 
-
-# Database
-# https://docs.djangoproject.com/en/1.10/ref/settings/#databases
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -108,10 +102,6 @@ DATABASES = {
         'PASSWORD': os.environ.get('MYSQL_PASSWORD'),
     }
 }
-
-
-# Password validation
-# https://docs.djangoproject.com/en/1.10/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
     {

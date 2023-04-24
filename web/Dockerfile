@@ -11,7 +11,6 @@ COPY requirements.txt .
 RUN python -m pip install -r requirements.txt
 
 RUN mkdir /app
-COPY . /app
 
 RUN mkdir -p /app/media
 RUN mkdir -p /app/static

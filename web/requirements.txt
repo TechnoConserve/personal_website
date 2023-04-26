@@ -66,6 +66,7 @@ typing_extensions==4.4.0
 Unidecode==1.1.1
 urllib3==1.26.5
 wagtail==4.2.2
+wagtail-generic-chooser==0.5.1
 wcwidth==0.1.8
 webencodings==0.5.1
 Willow==1.4

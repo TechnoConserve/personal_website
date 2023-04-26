@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'wagtail.admin',
     'wagtail',
 
+    'generic_chooser',
     'imagekit',
     'modelcluster',
     'taggit',

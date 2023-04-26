@@ -8,7 +8,7 @@ from wagtail_photography.models import PhotoGalleryMixin
 class PhotoGallery(PhotoGalleryMixin, Page):
     content = StreamField([
         ("gallery", GalleryBlock()),
-    ], blank=True)
+    ], blank=True, use_json_field=True)
 
     content_panels = Page.content_panels + [
         FieldPanel("content"),

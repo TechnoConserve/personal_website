@@ -1,0 +1,3 @@
+[submodule "web/wagtail-photography"]
+	path = web/wagtail-photography
+	url = git@github.com:TechnoConserve/wagtail-photography.git

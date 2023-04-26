@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class WagtailPhotographyConfig(AppConfig):
+class PhotographyConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'wagtail_photography'
+    name = 'photography'

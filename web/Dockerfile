@@ -7,6 +7,7 @@ ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 
 # Install pip requirements
+COPY wagtail-photography/ .
 COPY requirements.txt .
 RUN python -m pip install -r requirements.txt
 
@@ -21,4 +22,4 @@ RUN chmod -R 764 /app/media
 RUN chmod -R 764 /app/static
 
 WORKDIR /app
-USER appuser
+#USER appuser

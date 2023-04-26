@@ -47,11 +47,15 @@ INSTALLED_APPS = [
     'imagekit',
     'modelcluster',
     'taggit',
+    # wagtail_photography is managed as an external project but developed alongside this one
+    'wagtail_photography',
 
     'blog',
     'civ',
     'custom_user',
-    'wagtail_photography',
+    # photography basically just implements wagtail_photography
+    # Using two separate apps makes it easier to use without compromising wagtail_photography's reusability
+    'photography'
 ]
 
 MIDDLEWARE = [

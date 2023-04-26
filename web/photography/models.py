@@ -1,0 +1,15 @@
+from wagtail.admin.panels import FieldPanel
+from wagtail.fields import StreamField
+from wagtail.models import Page
+from wagtail_photography.blocks import GalleryBlock
+from wagtail_photography.models import PhotoGalleryMixin
+
+
+class PhotoGallery(PhotoGalleryMixin, Page):
+    content = StreamField([
+        ("gallery", GalleryBlock()),
+    ], blank=True)
+
+    content_panels = Page.content_panels + [
+        FieldPanel("content"),
+    ]

@@ -8,7 +8,7 @@ from django.urls import include, path
 from django.conf.urls.static import static
 from django.contrib import admin
 
-from .views import landing
+from landing.views import landing
 from civ.views import civ_webhook
 from custom_user.forms import CustomUserForm
 import custom_user.views as account_views
@@ -40,7 +40,7 @@ urlpatterns = [
     # Landing page to choose blog or photography
     path('', landing, name='landing'),
     path('', include('django.contrib.auth.urls')),
-    path('blog/', include(wagtail_urls)),  # At the end so as not to override others
+    path('', include(wagtail_urls)),
 ]
 
 if settings.DEBUG:

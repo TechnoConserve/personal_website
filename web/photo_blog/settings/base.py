@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'blog',
     'civ',
     'custom_user',
+    'landing',
     # photography basically just implements wagtail_photography
     # Using two separate apps makes it easier to use without compromising wagtail_photography's reusability
     'photography'

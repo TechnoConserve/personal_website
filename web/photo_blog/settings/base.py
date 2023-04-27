@@ -45,7 +45,6 @@ INSTALLED_APPS = [
     'wagtail',
 
     'generic_chooser',
-    'imagekit',
     'modelcluster',
     'taggit',
     # wagtail_photography is managed as an external project but developed alongside this one

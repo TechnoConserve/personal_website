@@ -23,4 +23,4 @@ RUN chmod -R 764 /app/media
 RUN chmod -R 764 /app/static
 
 WORKDIR /app
-#USER appuser  # TODO - uncomment
+USER appuser

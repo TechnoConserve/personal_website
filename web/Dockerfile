@@ -27,9 +27,7 @@ RUN mkdir -p /app/media && \
 
 COPY . /app
 
-RUN useradd --no-create-home --shell /bin/bash --no-log-init --uid 5678 appuser
-
-RUN chown -R 3434:101 /app
+RUN groupadd -r appuser && useradd --no-create-home --shell /bin/bash --no-log-init -r -g appuser appuser
 
 WORKDIR /app
-USER appuser
+#USER appuser:appuser

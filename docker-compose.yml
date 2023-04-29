@@ -14,7 +14,10 @@ services:
       unless-stopped
 
   web:
-    build: ./web
+    build:
+      context: ./web
+      args:
+        DJANGO_SETTINGS_MODULE: ${DJANGO_SETTINGS_MODULE}
     container_name: ave-web
     ports:
       - "9000:9000"
@@ -24,7 +27,8 @@ services:
     env_file:
       - web.env
     command: bash -c "python manage.py collectstatic --no-input && \
-      daphne -b 0.0.0.0 -p 9000 photo_blog.asgi:application"
+      chown -R appuser:appuser /app && \
+      su -c 'daphne -b 0.0.0.0 -p 9000 photo_blog.asgi:application' appuser"
     depends_on:
       - db
     restart:

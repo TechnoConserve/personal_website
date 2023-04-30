@@ -26,7 +26,7 @@ services:
       - media_volume:/app/media
     env_file:
       - web.env
-    command: bash -c "python manage.py collectstatic --no-input && chown -R appuser:appuser /app && su -c 'daphne -v 1 -b 0.0.0.0 -p 9000 photo_blog.asgi:application' appuser"
+    command: bash -c "python manage.py collectstatic --no-input && chown -R appuser:101 /app && su -c 'daphne -v 1 -b 0.0.0.0 -p 9000 photo_blog.asgi:application' appuser"
     depends_on:
       - db
     restart:

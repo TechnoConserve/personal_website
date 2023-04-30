@@ -18,7 +18,6 @@ BASE_DIR = os.path.dirname(PROJECT_DIR)
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get('AVE_SECRET_KEY')
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -134,7 +133,6 @@ PASSWORD_HASHERS = [
 
 AUTH_USER_MODEL = 'custom_user.CustomUser'
 
-
 # Wagtail Search
 
 WAGTAILSEARCH_BACKENDS = {
@@ -142,7 +140,6 @@ WAGTAILSEARCH_BACKENDS = {
         'BACKEND': 'wagtail.search.backends.database',
     }
 }
-
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.10/topics/i18n/
@@ -152,7 +149,6 @@ TIME_ZONE = 'US/Mountain'
 USE_I18N = True
 USE_L10N = True
 USE_TZ = True
-
 
 # Static files (CSS, JavaScript, Images)
 
@@ -176,10 +172,8 @@ STATIC_URL = '/static/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
-
 # Other Wagtail settings
 WAGTAIL_SITE_NAME = "Photo Blog"
-
 
 # Email
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
@@ -207,7 +201,6 @@ TAGGIT_CASE_INSENSITIVE = True
 
 WAGTAILEMBEDS_RESPONSIVE_HTML = True
 
-
 # Django-registration
 ACCOUNT_ACTIVATION_DAYS = 7
 
@@ -230,11 +223,17 @@ LOGGING = {
             'style': '{',
         },
     },
+    'filters': {
+        'require_debug_true': {
+            '()': 'django.utils.log.RequireDebugTrue',
+        },
+    },
     'handlers': {
         'console': {
             'level': 'DEBUG',
+            'filters': ['require_debug_true'],
             'class': 'logging.StreamHandler',
-            'formatter': 'verbose'
+            'formatter': 'simple'
         },
         'mail_admins': {
             'level': 'ERROR',

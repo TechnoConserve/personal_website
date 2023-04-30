@@ -1,10 +1,11 @@
 from django_registration.views import RegistrationView
 from wagtail.admin import urls as wagtailadmin_urls
 from wagtail.documents import urls as wagtaildocs_urls
+from wagtail.images.views.serve import ServeView
 from wagtail import urls as wagtail_urls
 
 from django.conf import settings
-from django.urls import include, path
+from django.urls import include, path, re_path
 from django.conf.urls.static import static
 from django.contrib import admin
 
@@ -36,6 +37,8 @@ urlpatterns = [
 
     # User stats
     path('~<username>/', account_views.user_profile, name='user_profile'),
+
+    re_path(r'^images/([^/]*)/(\d*)/([^/]*)/[^/]*$', ServeView.as_view(), name='wagtailimages_serve'),
 
     # Landing page to choose blog or photography
     path('', landing, name='landing'),

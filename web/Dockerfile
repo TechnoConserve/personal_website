@@ -25,7 +25,7 @@ WORKDIR /app
 # Otherwise, install the local version
 RUN if [ $DJANGO_SETTINGS_MODULE = "photo_blog.settings.production" ]; then \
       python -m pip install wagtail-photography && \
-      rm -r /app/wagtail-phtoography; \
+      rm -r /app/wagtail-photography; \
     else \
       python -m pip install ./wagtail-photography; \
     fi

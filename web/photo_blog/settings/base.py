@@ -15,13 +15,8 @@ import os
 PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE_DIR = os.path.dirname(PROJECT_DIR)
 
-
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/1.10/howto/deployment/checklist/
-
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get('AVE_SECRET_KEY')
-
 
 # Application definition
 
@@ -46,14 +41,21 @@ INSTALLED_APPS = [
     'wagtail.images',
     'wagtail.search',
     'wagtail.admin',
-    'wagtail.core',
+    'wagtail',
 
+    'generic_chooser',
     'modelcluster',
     'taggit',
+    # wagtail_photography is managed as an external project but developed alongside this one
+    'wagtail_photography',
 
     'blog',
     'civ',
     'custom_user',
+    'landing',
+    # photography basically just implements wagtail_photography
+    # Using two separate apps makes it easier to use without compromising wagtail_photography's reusability
+    'photography'
 ]
 
 MIDDLEWARE = [
@@ -93,17 +95,10 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'photo_blog.wsgi.application'
 
-
-# Database
-# https://docs.djangoproject.com/en/1.10/ref/settings/#databases
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'OPTIONS': {
-            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
-            'isolation_level': 'read committed',
-        },
+        'OPTIONS': {'charset': 'utf8mb4'},
         'HOST': 'ave-db',
         'USER': os.environ.get('MYSQL_USER'),
         'NAME': os.environ.get('MYSQL_DATABASE'),
@@ -111,10 +106,6 @@ DATABASES = {
         'PASSWORD': os.environ.get('MYSQL_PASSWORD'),
     }
 }
-
-
-# Password validation
-# https://docs.djangoproject.com/en/1.10/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -142,16 +133,13 @@ PASSWORD_HASHERS = [
 
 AUTH_USER_MODEL = 'custom_user.CustomUser'
 
-
 # Wagtail Search
 
 WAGTAILSEARCH_BACKENDS = {
     'default': {
-        'BACKEND': 'wagtail.search.backends.db',
-        'INDEX': 'myapp'
+        'BACKEND': 'wagtail.search.backends.database',
     }
 }
-
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.10/topics/i18n/
@@ -162,10 +150,21 @@ USE_I18N = True
 USE_L10N = True
 USE_TZ = True
 
-
 # Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/1.10/howto/static-files/
 
+STATICFILES_FINDERS = [
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+]
+
+STATICFILES_DIRS = [
+    os.path.join(PROJECT_DIR, 'static'),
+]
+
+# ManifestStaticFilesStorage is recommended in production, to prevent outdated
+# Javascript / CSS assets being served from cache (e.g. after a Wagtail upgrade).
+# See https://docs.djangoproject.com/en/3.0/ref/contrib/staticfiles/#manifeststaticfilesstorage
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
@@ -173,10 +172,8 @@ STATIC_URL = '/static/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
-
 # Other Wagtail settings
 WAGTAIL_SITE_NAME = "Photo Blog"
-
 
 # Email
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
@@ -195,18 +192,14 @@ ADMINS = [
 ]
 MANAGERS = ADMINS
 
+WAGTAILADMIN_BASE_URL = 'https://averyuslaner.com'
 WAGTAILADMIN_NOTIFICATION_FROM_EMAIL = 'admin@averyuslaner.com'
 WAGTAILADMIN_NOTIFICATION_USE_HTML = True
 
 WAGTAIL_ENABLE_UPDATE_CHECK = True
 TAGGIT_CASE_INSENSITIVE = True
 
-WAGTAIL_USER_EDIT_FORM = 'custom_user.forms.CustomUserEditForm'
-WAGTAIL_USER_CREATION_FORM = 'custom_user.forms.CustomUserCreationForm'
-WAGTAIL_USER_CUSTOM_FIELDS = []  # Nothing yet
-
 WAGTAILEMBEDS_RESPONSIVE_HTML = True
-
 
 # Django-registration
 ACCOUNT_ACTIVATION_DAYS = 7
@@ -230,11 +223,17 @@ LOGGING = {
             'style': '{',
         },
     },
+    'filters': {
+        'require_debug_true': {
+            '()': 'django.utils.log.RequireDebugTrue',
+        },
+    },
     'handlers': {
         'console': {
             'level': 'DEBUG',
+            'filters': ['require_debug_true'],
             'class': 'logging.StreamHandler',
-            'formatter': 'verbose'
+            'formatter': 'simple'
         },
         'mail_admins': {
             'level': 'ERROR',

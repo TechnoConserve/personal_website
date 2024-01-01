@@ -5,11 +5,10 @@ from modelcluster.contrib.taggit import ClusterTaggableManager
 from modelcluster.fields import ParentalKey
 from taggit.models import TaggedItemBase, Tag as TaggitTag
 
-from wagtail.core import blocks
-from wagtail.core.fields import RichTextField, StreamField
-from wagtail.core.models import Page, Orderable
-from wagtail.admin.edit_handlers import FieldPanel, InlinePanel, MultiFieldPanel, StreamFieldPanel
-from wagtail.images.edit_handlers import ImageChooserPanel
+from wagtail import blocks
+from wagtail.fields import RichTextField, StreamField
+from wagtail.models import Page, Orderable
+from wagtail.admin.panels import FieldPanel, InlinePanel, MultiFieldPanel
 from wagtail.search import index
 from wagtail.snippets.models import register_snippet
 
@@ -85,7 +84,7 @@ class BlogIndexPage(BlogRoutes, Page):
 
 class BlogTagIndexPage(Page):
     def get_context(self, request):
-        #Filter by tag
+        # Filter by tag
         tag = request.GET.get('tag')
         blogpages = BlogPage.objects.filter(tags__name=tag)
 
@@ -124,7 +123,7 @@ class BlogPage(Page):
                    "to schedule posts to go live at a later date.")
     )
     intro = models.CharField(max_length=250)
-    body = StreamField(block_types=BLOCK_TYPES, verbose_name='body')
+    body = StreamField(block_types=BLOCK_TYPES, verbose_name='body', use_json_field=True)
     tags = ClusterTaggableManager(through=BlogPageTag, blank=True)
 
     def main_image(self):
@@ -145,7 +144,7 @@ class BlogPage(Page):
             FieldPanel('tags'),
         ], heading='Blog information'),
         FieldPanel('intro'),
-        StreamFieldPanel('body'),
+        FieldPanel('body'),
         InlinePanel('gallery_images', label='Gallery images'),
     ]
 
@@ -158,6 +157,6 @@ class BlogPageGalleryImage(Orderable):
     caption = models.CharField(blank=True, max_length=250)
 
     panels = [
-        ImageChooserPanel('image'),
+        FieldPanel('image'),
         FieldPanel('caption'),
     ]

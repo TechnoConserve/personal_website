@@ -16,3 +16,5 @@ services:
     volumes:
       - static_volume:/app/static
       - media_volume:/app/media
+      - /etc/letsencrypt/live/averyuslaner.com/fullchain.pem:/etc/letsencrypt/live/averyuslaner.com/fullchain.pem:ro
+      - /etc/letsencrypt/live/averyuslaner.com/privkey.pem:/etc/letsencrypt/live/averyuslaner.com/privkey.pem:ro

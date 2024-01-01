@@ -9,3 +9,4 @@ RUN ln -s /opt/certbot/bin/certbot /usr/bin/certbot
 
 RUN rm /etc/nginx/conf.d/default.conf
 COPY default.conf.template /etc/nginx/templates/
+COPY ads.txt /etc/nginx/

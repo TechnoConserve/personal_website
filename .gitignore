@@ -110,4 +110,7 @@ fullchain.pem
 privkey.pem
 web/static/*
 web/media/*
+nginx/digitalocean.ini
+nginx/ads.txt
+
 db/*.sql

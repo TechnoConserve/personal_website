@@ -36,6 +36,10 @@ server {
         proxy_redirect off;
     }
 
+    location /ads.txt {
+        alias /etc/nginx/ads.txt;
+    }
+
     location ~ /.well-known/acme-challenge {
         allow all;
         root /var/www/certbot;

@@ -10,7 +10,6 @@ ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 
 # Install pip requirements
-COPY wagtail-photography/ /wagtail-photography/
 COPY requirements.txt .
 RUN python -m pip install -r requirements.txt
 
